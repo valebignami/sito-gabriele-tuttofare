@@ -1,0 +1,9 @@
+# file di sistema Windows / OneDrive
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+
+# screenshot temporanei delle verifiche
+*.png
+.playwright-mcp/

@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabriele — Tuttofare per la casa | Idraulica, caldaie e condizionatori a Milano</title>
+<meta name="description" content="Idraulica, caldaie e condizionatori, bagni, muratura, piastrelle e riparazioni. Vent'anni di cantiere, un solo professionista per tutta la casa. Milano e provincia. Sopralluogo e preventivo gratuiti.">
+<meta name="theme-color" content="#16181A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gabriele — Un solo professionista per tutta la casa">
+<meta property="og:description" content="Idraulica, caldaie e condizionatori, bagni, muratura, piastrelle e riparazioni a Milano e provincia. Sopralluogo e preventivo gratuiti.">
+<meta property="og:image" content="img/hero.jpg">
+<meta property="og:locale" content="it_IT">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2316181A'/><path d='M8 22 L16 8 L24 22 Z' fill='%23F26522'/></svg>">
+<link rel="preload" href="fonts/Anton-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Barlow-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script>
+  /* Nasconde i blocchi dell'hero solo se il JS può poi rivelarli. La rete di
+     sicurezza serve se script.js non arriva: la pagina non deve mai restare cieca. */
+  document.documentElement.className += ' anim';
+  setTimeout(function () {
+    var q = document.querySelectorAll('[data-rise]:not(.is-in), .step:not(.is-in)');
+    for (var i = 0; i < q.length; i++) q[i].classList.add('is-in');
+  }, 1600);
+</script>
+<noscript><style>.anim [data-rise]{opacity:1;transform:none}.anim .step::before{transform:scaleX(1)}</style></noscript>
+</head>
+<body>
+<!--
+  THESIS: Un capocantiere che ha aggiunto un secondo mestiere, non un tuttofare improvvisato.
+  Rifiuta la griglia di sei schede identiche icona+titolo+testo: i servizi sono un cartello
+  di cantiere, righe larghe che si leggono in scorrimento col pollice.
+  OWN-WORLD: antracite #16181A, arancio segnaletica #F26522, Anton in maiuscolo per le
+  affermazioni, Barlow per la voce parlata, filetti sottili come tracciati sul muro, foto
+  a pieno sanguinamento velate di nero. Nessuna scheda con ombra, nessun gradiente di testo.
+  STORY: capisce in tre secondi che uno solo copre tutta la casa, crede al percorso
+  muratore-capo squadra-idraulico, scrive su WhatsApp con la foto del guasto.
+  FIRST VIEWPORT: foto a schermo pieno di un ambiente domestico appena finito, pulito e
+  luminoso (correzione di rotta del committente: mai cantiere sporco), velata di scuro
+  freddo; in basso a sinistra il segnale di disponibilita, il titolo in Anton su tre
+  righe, i due pulsanti WhatsApp e Chiama in fila, la riga del preventivo gratuito sotto.
+  FORM: direzione fissata dall'utente in fase di brief (antracite + arancio, mestiere
+  moderno), quindi nessun sorteggio di concept: una direzione pinnata batte il roll.
+  LESSICO: si dice "professionista", mai "artigiano" — scelta esplicita del committente.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+
+<a class="skip" href="#top">Salta al contenuto</a>
+
+<header class="topbar" id="topbar">
+  <a class="wordmark" href="#top">Gabriele</a>
+  <nav class="topnav">
+    <a href="#servizi">Servizi</a>
+    <a href="#chi-sono">Chi sono</a>
+    <a href="#recensioni">Recensioni</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+  <a class="topbar-call" href="tel:+39XXXXXXXXXX">
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5L17 13l4 1.5v3a2.5 2.5 0 0 1-2.7 2.5A16.5 16.5 0 0 1 3 5.7 2.5 2.5 0 0 1 5.5 3Z"/></svg>
+    <span class="ph">+39 XXX XXX XXXX</span>
+  </a>
+</header>
+
+<main id="top">
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <img class="hero-img" src="img/hero.jpg" alt="Salone di un appartamento milanese appena ristrutturato" fetchpriority="high" width="2400" height="1600">
+    <div class="hero-veil"></div>
+    <div class="hero-inner">
+      <p class="pill" data-rise="1"><span class="dot"></span>Disponibile per urgenze — Milano e provincia</p>
+      <h1 data-rise="2">Un solo professionista<br>per tutta<br><em>la casa</em></h1>
+      <p class="lede" data-rise="3">Idraulica, caldaie e condizionatori. Bagni, muratura, piastrelle, riparazioni. Vent'anni di cantiere, un numero solo da chiamare.</p>
+      <div class="actions" data-rise="4">
+        <a class="btn btn-wa" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Gabriele%2C%20ti%20ho%20trovato%20sul%20sito.">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Z"/><path class="wa-tail" d="M8.6 7.3c.2-.4.4-.4.7-.4h.6c.2 0 .5 0 .7.5l.9 2c.1.3 0 .5-.1.7l-.5.6c-.2.2-.3.4-.1.7a7.6 7.6 0 0 0 3.5 3c.3.2.5.1.7-.1l.7-.8c.2-.2.4-.2.6-.1l2 .9c.3.1.4.3.4.5v.7c0 .8-.7 1.5-1.5 1.6-.4 0-.8 0-1.4-.2a11 11 0 0 1-6.7-6.6c-.3-.9-.4-1.5-.3-2 0-.4.2-.7.4-1Z"/></svg>
+          Scrivimi su WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="tel:+39XXXXXXXXXX">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5L17 13l4 1.5v3a2.5 2.5 0 0 1-2.7 2.5A16.5 16.5 0 0 1 3 5.7 2.5 2.5 0 0 1 5.5 3Z"/></svg>
+          Chiama ora
+        </a>
+      </div>
+      <p class="hero-note" data-rise="5">Sopralluogo e preventivo gratuiti, senza impegno.</p>
+    </div>
+  </section>
+
+  <!-- ==================== FASCIA SCORREVOLE ====================
+       Decorativa: ripete i servizi già elencati sotto, quindi è nascosta
+       alle tecnologie assistive per non farli sentire due volte. -->
+  <div class="fascia" aria-hidden="true">
+    <div class="fascia-pista">
+      <div class="fascia-gruppo">
+        <span class="fascia-voce">Idraulica</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Caldaie</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Condizionatori</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Bagni</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Muratura</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Cartongesso</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Piastrelle</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Pavimenti</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Riparazioni</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Tinteggiatura</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Ristrutturazioni</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Finiture</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+      </div>
+      <div class="fascia-gruppo">
+        <span class="fascia-voce">Idraulica</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Caldaie</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Condizionatori</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Bagni</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Muratura</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Cartongesso</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Piastrelle</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Pavimenti</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Riparazioni</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Tinteggiatura</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Ristrutturazioni</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        <span class="fascia-voce">Finiture</span><svg class="fascia-stella" viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PERCORSO ==================== -->
+  <section class="percorso" id="percorso">
+    <h2 class="percorso-title">Non un tuttofare improvvisato.<br><span>Un capocantiere con un secondo mestiere.</span></h2>
+    <ol class="track" aria-label="Percorso professionale">
+      <li class="step">
+        <span class="step-mark" aria-hidden="true"></span>
+        <h3>Muratore</h3>
+        <p>Vent'anni in imprese edili, dal primo mattone alle strutture.</p>
+      </li>
+      <li class="step">
+        <span class="step-mark" aria-hidden="true"></span>
+        <h3>Capo squadra</h3>
+        <p>Responsabile di cantiere: uomini, tempi e lavoro consegnato finito.</p>
+      </li>
+      <li class="step is-now">
+        <span class="step-mark" aria-hidden="true"></span>
+        <h3>Idraulico</h3>
+        <p>Specializzazione in caldaie, condizionatori e impianti idraulici.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ==================== SERVIZI ==================== -->
+  <section class="servizi" id="servizi">
+    <div class="sec-head">
+      <h2>Cosa faccio</h2>
+      <p>Se riguarda la casa, quasi sempre è lavoro mio. Se non lo è, te lo dico subito.</p>
+    </div>
+
+    <ul class="rows">
+      <li>
+        <a class="row" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Gabriele%2C%20ti%20ho%20trovato%20sul%20sito.%20Avrei%20bisogno%20per%3A%20idraulica%20o%20caldaia.">
+          <span class="row-thumb"><img src="img/serv-idraulica.jpg" alt="Intervento su una caldaia murale: circolatore, manometro e display" loading="lazy" width="1600" height="1067"></span>
+          <span class="row-text">
+            <span class="row-head">
+              <svg class="row-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="3.4" width="15" height="12.2" rx="2"/><path d="M12 6.9c1.7 1.4 2.3 2.5 2.3 3.5a2.3 2.3 0 0 1-4.6 0c0-1 .6-2.1 2.3-3.5z"/><path d="M8 18.4v2.2M12 18.4v2.8M16 18.4v2.2"/></svg>
+              <h3>Idraulica e caldaie</h3>
+            </span>
+            <p>Installazione e sostituzione di caldaie, perdite, scarichi otturati, rubinetteria, radiatori, autoclavi e allacci.</p>
+          </span>
+          <span class="row-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </li>
+      <li>
+        <a class="row" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Gabriele%2C%20ti%20ho%20trovato%20sul%20sito.%20Avrei%20bisogno%20per%3A%20un%20condizionatore.">
+          <span class="row-thumb"><img src="img/serv-clima.jpg" alt="Unità split bianca montata a parete in una stanza chiara" loading="lazy" width="1600" height="1067"></span>
+          <span class="row-text">
+            <span class="row-head">
+              <svg class="row-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="9" rx="2"/><path d="M6.5 10.2h6"/><path d="M6.4 17.4c1.5-.7 2.8-.7 4.3 0M13.3 17.4c1.5-.7 2.8-.7 4.3 0"/></svg>
+              <h3>Condizionatori</h3>
+            </span>
+            <p>Installazione e sostituzione di split e multisplit, spostamento di unità esistenti, manutenzione e pulizia dei filtri prima dell'estate.</p>
+          </span>
+          <span class="row-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </li>
+      <li>
+        <a class="row" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Gabriele%2C%20ti%20ho%20trovato%20sul%20sito.%20Avrei%20bisogno%20per%3A%20bagno%20o%20ristrutturazione.">
+          <span class="row-thumb"><img src="img/serv-bagno.jpg" alt="Bagno moderno grigio chiaro con box doccia in vetro" loading="lazy" width="1600" height="1068"></span>
+          <span class="row-text">
+            <span class="row-head">
+              <svg class="row-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4.2"/><path d="M6.4 10.4a5.6 5.6 0 0 1 11.2 0z"/><path d="M8.4 14v1.6M12 13.6v2.4M15.6 14v1.6M10.2 18.4v1.6M13.8 18.4v1.6"/></svg>
+              <h3>Bagni e ristrutturazioni</h3>
+            </span>
+            <p>Rifacimento completo del bagno, dalla demolizione ai sanitari montati. Un solo cantiere, un solo interlocutore.</p>
+          </span>
+          <span class="row-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </li>
+      <li>
+        <a class="row" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Gabriele%2C%20ti%20ho%20trovato%20sul%20sito.%20Avrei%20bisogno%20per%3A%20muratura%20o%20cartongesso.">
+          <span class="row-thumb"><img src="img/serv-muratura.jpg" alt="Lastra di cartongesso avvitata sul profilo metallico" loading="lazy" width="1600" height="1067"></span>
+          <span class="row-text">
+            <span class="row-head">
+              <svg class="row-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.2"/><path d="M3 9.7h18M3 14.3h18M9 5v4.7M15 9.7v4.6M9 14.3V19"/></svg>
+              <h3>Muratura e cartongesso</h3>
+            </span>
+            <p>Tramezze, aperture, ripristini e rasature. Contropareti, controsoffitti e nicchie in cartongesso.</p>
+          </span>
+          <span class="row-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </li>
+      <li>
+        <a class="row" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Gabriele%2C%20ti%20ho%20trovato%20sul%20sito.%20Avrei%20bisogno%20per%3A%20piastrelle%20o%20pavimenti.">
+          <span class="row-thumb"><img src="img/serv-piastrelle.jpg" alt="Posa di una piastrella su colla pettinata, con i livellatori" loading="lazy" width="1600" height="1067"></span>
+          <span class="row-text">
+            <span class="row-head">
+              <svg class="row-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6 21.4 12 12 21.4 2.6 12z"/><path d="M7.3 7.3 12 12l4.7-4.7M7.3 16.7 12 12l4.7 4.7"/></svg>
+              <h3>Piastrelle e pavimenti</h3>
+            </span>
+            <p>Posa di pavimenti e rivestimenti, battiscopa, fughe rifatte, sostituzione di piastrelle rotte o staccate.</p>
+          </span>
+          <span class="row-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </li>
+      <li>
+        <a class="row" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Gabriele%2C%20ti%20ho%20trovato%20sul%20sito.%20Avrei%20bisogno%20per%3A%20una%20riparazione.">
+          <span class="row-thumb"><img src="img/serv-riparazioni.jpg" alt="Avvitatore a batteria su un serramento bianco nuovo" loading="lazy" width="1600" height="1067"></span>
+          <span class="row-text">
+            <span class="row-head">
+              <svg class="row-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 20.4 4.5 17l9-9 2.5 2.5-9 9z"/><path d="m16 7.5 2-2a2.2 2.2 0 0 1 3.1 3.1l-2 2z"/><path d="m12.7 8.8 2.5 2.5"/></svg>
+              <h3>Riparazioni e piccoli lavori</h3>
+            </span>
+            <p>Porte che non chiudono, tapparelle, mensole, zanzariere, silicone: tutto quello che si rimanda da mesi.</p>
+          </span>
+          <span class="row-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </li>
+      <li>
+        <a class="row" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Gabriele%2C%20ti%20ho%20trovato%20sul%20sito.%20Avrei%20bisogno%20per%3A%20tinteggiatura%20o%20finiture.">
+          <span class="row-thumb"><img src="img/serv-tinteggiatura.jpg" alt="Mano con il pennellone accanto alla scala, in una stanza bianca" loading="lazy" width="1600" height="1067"></span>
+          <span class="row-text">
+            <span class="row-head">
+              <svg class="row-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.8" y="3.6" width="12" height="5.2" rx="1.2"/><path d="M14.8 6.2h4.1a1.3 1.3 0 0 1 1.3 1.3v2a1.3 1.3 0 0 1-1.3 1.3h-6.4a1.3 1.3 0 0 0-1.3 1.3v1.5"/><rect x="9.4" y="13.6" width="4.4" height="6.8" rx="1.2"/></svg>
+              <h3>Tinteggiatura e finiture</h3>
+            </span>
+            <p>Imbiancatura di stanze e appartamenti, stucco, ritocchi e finiture dopo il lavoro grosso.</p>
+          </span>
+          <span class="row-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </li>
+    </ul>
+    <p class="rows-note">Tocca un servizio: si apre WhatsApp con il messaggio già pronto.</p>
+  </section>
+
+  <!-- ==================== CHI SONO ==================== -->
+  <section class="chi" id="chi-sono">
+    <div class="chi-photo">
+      <img src="img/gabriele.jpg" alt="Professionista al lavoro su un serramento in una stanza luminosa" loading="lazy" width="1400" height="2097">
+    </div>
+    <div class="chi-text">
+      <h2>Sono Gabriele</h2>
+      <p>Ho iniziato in cantiere come muratore e ci sono rimasto vent'anni, arrivando a guidare la squadra e a seguire i lavori dall'inizio alla fine. Poi mi sono specializzato in idraulica: caldaie, condizionatori, impianti, bagni.</p>
+      <p>Il vantaggio di aver fatto tutti e due i mestieri è semplice. Quando devo spostare uno scarico so anche cosa c'è dentro quel muro, e quando chiudo un muro so come ci passa un tubo. Chi chiama tre ditte diverse, di solito, le fa litigare tra loro.</p>
+      <p>Vengo a vedere il lavoro, ti dico cosa serve e quanto costa. Poi decidi tu.</p>
+      <p class="sign">Gabriele <span class="ph">[COGNOME]</span> — Milano e provincia</p>
+    </div>
+  </section>
+
+  <!-- ==================== COME FUNZIONA ==================== -->
+  <section class="come" id="come-funziona">
+    <div class="sec-head">
+      <h2>Come funziona</h2>
+      <p>Tre passaggi, nessuna sorpresa in fondo.</p>
+    </div>
+    <ol class="passi">
+      <li class="passo">
+        <span class="passo-ico" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M4.5 7h23v14.5H15l-6.5 5.5v-5.5h-4z"/><circle cx="16" cy="14" r="3.2"/><path d="M11.6 11.4h1.5l1-1.7h3.8l1 1.7h1.5"/></svg>
+        </span>
+        <h3>Mi scrivi su WhatsApp</h3>
+        <p>Anche solo una foto del problema. Di solito capisco subito se è lavoro mio e che cosa serve.</p>
+      </li>
+      <li class="passo">
+        <span class="passo-ico" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M8 5.5h16v21H8z"/><path d="M12.5 5.5V3.5h7v2"/><path d="M12 14.2l2.7 2.7 5.5-5.6"/><path d="M12 21.5h8"/></svg>
+        </span>
+        <h3>Vengo a vedere</h3>
+        <p>Sopralluogo e preventivo gratuiti, senza impegno. Il prezzo lo sai prima che inizi.</p>
+      </li>
+      <li class="passo">
+        <span class="passo-ico" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M20.8 4.6a6.2 6.2 0 0 0-8 7.8L4.6 20.6a2.7 2.7 0 0 0 3.8 3.8l8.2-8.2a6.2 6.2 0 0 0 7.8-8l-3.5 3.5-3.4-.8-.8-3.4z"/><path d="M6.8 22.3h.02"/></svg>
+        </span>
+        <h3>Faccio il lavoro</h3>
+        <p>E lascio pulito. Quello che sporco lo pulisco io, non resta a te.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ==================== DICONO DI ME ====================
+       I tre testi qui sotto sono stati forniti dal committente come recensioni
+       ricevute da clienti reali. Vanno pubblicati SOLO se sono parole vere di
+       persone vere: le recensioni inventate sono una pratica commerciale
+       ingannevole (Codice del Consumo, artt. 21-22). Non modificarli: una
+       testimonianza si cita alla lettera o non si cita. -->
+  <section class="dicono" id="recensioni">
+    <div class="sec-head">
+      <h2>Dicono di me</h2>
+    </div>
+
+    <ul class="voci">
+      <li class="voce">
+        <span class="stelle" role="img" aria-label="Cinque stelle su cinque">
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        </span>
+        <blockquote>Caldaia morta di venerdì sera, con due bambini piccoli in casa. L'ho chiamato su WhatsApp e il sabato mattina alle 8 era da noi. Ha trovato il guasto in mezz'ora, ha recuperato il pezzo e per pranzo avevamo di nuovo l'acqua calda. Prezzo onesto, detto prima e rispettato.</blockquote>
+        <p class="voce-chi"><b>Marco P.</b><span>Cinisello Balsamo · riparazione caldaia d'urgenza</span></p>
+      </li>
+      <li class="voce">
+        <span class="stelle" role="img" aria-label="Cinque stelle su cinque">
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        </span>
+        <blockquote>Abbiamo rifatto il bagno completamente: demolizione, nuovi scarichi, piastrelle e sanitari. Si vede che viene dall'edilizia vera, non è il classico "so fare un po' di tutto". Cantiere pulito ogni sera, tempi rispettati e ci ha consigliato lui dove risparmiare invece di venderci il lavoro più costoso.</blockquote>
+        <p class="voce-chi"><b>Silvia R.</b><span>Milano · rifacimento completo del bagno</span></p>
+      </li>
+      <li class="voce">
+        <span class="stelle" role="img" aria-label="Cinque stelle su cinque">
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z"/></svg>
+        </span>
+        <blockquote>Lo chiamiamo ormai per qualsiasi cosa: una crepa sul muro, una perdita sotto il lavello, la porta che non chiudeva più. La cosa che apprezzo di più è che risponde sempre e se non può venire subito te lo dice chiaramente, senza farti perdere tempo. Persona seria, di quelle che ormai si trovano poco.</blockquote>
+        <p class="voce-chi"><b>Giuseppe T.</b><span>Sesto San Giovanni · riparazioni e manutenzioni</span></p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ==================== CONTATTI ==================== -->
+  <section class="cta" id="contatti">
+    <div class="cta-inner">
+      <h2>Hai qualcosa da sistemare in casa?</h2>
+      <p class="cta-sub">Scrivimi su WhatsApp con una foto, oppure chiamami. Rispondo io, non un centralino.</p>
+      <a class="tel-big" href="tel:+39XXXXXXXXXX"><span class="ph">+39 XXX XXX XXXX</span></a>
+      <div class="actions">
+        <a class="btn btn-wa" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Gabriele%2C%20ti%20ho%20trovato%20sul%20sito.">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Z"/><path class="wa-tail" d="M8.6 7.3c.2-.4.4-.4.7-.4h.6c.2 0 .5 0 .7.5l.9 2c.1.3 0 .5-.1.7l-.5.6c-.2.2-.3.4-.1.7a7.6 7.6 0 0 0 3.5 3c.3.2.5.1.7-.1l.7-.8c.2-.2.4-.2.6-.1l2 .9c.3.1.4.3.4.5v.7c0 .8-.7 1.5-1.5 1.6-.4 0-.8 0-1.4-.2a11 11 0 0 1-6.7-6.6c-.3-.9-.4-1.5-.3-2 0-.4.2-.7.4-1Z"/></svg>
+          Scrivimi su WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="tel:+39XXXXXXXXXX">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5L17 13l4 1.5v3a2.5 2.5 0 0 1-2.7 2.5A16.5 16.5 0 0 1 3 5.7 2.5 2.5 0 0 1 5.5 3Z"/></svg>
+          Chiama ora
+        </a>
+      </div>
+      <p class="cta-zone">Milano e provincia — sopralluogo e preventivo gratuiti.</p>
+    </div>
+    <div class="cta-media">
+      <img src="img/cta.jpg" alt="Montaggio di un raccordo su un radiatore" loading="lazy" width="2400" height="1600">
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="foot-name">Gabriele <span class="ph">[COGNOME]</span></p>
+  <p class="foot-meta">P.IVA <span class="ph">[P.IVA]</span> · Milano e provincia · <a href="tel:+39XXXXXXXXXX"><span class="ph">+39 XXX XXX XXXX</span></a></p>
+</footer>
+
+<nav class="bar" aria-label="Contatti rapidi">
+  <a class="bar-wa" href="https://wa.me/39XXXXXXXXXX?text=Ciao%20Gabriele%2C%20ti%20ho%20trovato%20sul%20sito.">
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Z"/><path class="wa-tail" d="M8.6 7.3c.2-.4.4-.4.7-.4h.6c.2 0 .5 0 .7.5l.9 2c.1.3 0 .5-.1.7l-.5.6c-.2.2-.3.4-.1.7a7.6 7.6 0 0 0 3.5 3c.3.2.5.1.7-.1l.7-.8c.2-.2.4-.2.6-.1l2 .9c.3.1.4.3.4.5v.7c0 .8-.7 1.5-1.5 1.6-.4 0-.8 0-1.4-.2a11 11 0 0 1-6.7-6.6c-.3-.9-.4-1.5-.3-2 0-.4.2-.7.4-1Z"/></svg>
+    WhatsApp
+  </a>
+  <a class="bar-tel" href="tel:+39XXXXXXXXXX">
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5L17 13l4 1.5v3a2.5 2.5 0 0 1-2.7 2.5A16.5 16.5 0 0 1 3 5.7 2.5 2.5 0 0 1 5.5 3Z"/></svg>
+    Chiama
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>

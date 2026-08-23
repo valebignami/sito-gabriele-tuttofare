@@ -1,0 +1,806 @@
+/* =========================================================================
+   Gabriele — tuttofare per la casa
+   Antracite + arancio segnaletica. Anton per le affermazioni, Barlow per la voce.
+   ========================================================================= */
+
+@font-face {
+  font-family: 'Anton';
+  src: url('fonts/Anton-400.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/Barlow-400.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/Barlow-500.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/Barlow-600.woff2') format('woff2');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/Barlow-700.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+:root {
+  --ink:       #16181A;
+  --ink-2:     #1D2023;
+  --fg:        #F5F3F0;
+  --fg-2:      #A9AEB3;
+  --line:      rgba(255, 255, 255, .13);
+  --line-2:    rgba(255, 255, 255, .28);
+  /* bordo di un elemento interattivo: deve stare sopra 3:1 (WCAG 1.4.11).
+     .28 dava 2.5:1 e il pulsante "Chiama ora" spariva sulle zone chiare della foto. */
+  --edge:      rgba(255, 255, 255, .46);
+  --edge-cta:  rgba(23, 17, 12, .64);
+  --orange:    #F26522;
+  --orange-hi: #FF7C3C;
+  --warn:      #FFD84D;
+
+  --pad:  clamp(1.25rem, 5vw, 5rem);
+  --wrap: 1280px;
+  /* Il bersaglio non è l'altezza dello schermo ma quella utile: la barra fissa
+     in alto ne toglie 76px, quindi su un portatile da 768 restano ~690.
+     Ogni sezione deve starci dentro, tranne l'elenco servizi che è una lista. */
+  --sec:  clamp(2.75rem, 4vw, 4rem);
+
+  --display: 'Anton', 'Arial Narrow', sans-serif;
+  --text:    'Barlow', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --ease: cubic-bezier(.16, .84, .34, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+/* la barra fissa in alto non deve coprire la sezione a cui si salta */
+[id] { scroll-margin-top: 76px; }
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--fg);
+  font-family: var(--text);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3 { margin: 0; font-weight: 400; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+
+:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--orange); color: var(--ink);
+  padding: .75rem 1.25rem; font-weight: 600;
+}
+.skip:focus { left: 0; }
+
+/* ---------- tipografia condivisa ---------- */
+
+.sec-head { margin-bottom: clamp(2rem, 4vw, 3.5rem); }
+.sec-head h2,
+.chi-text h2,
+.percorso-title {
+  font-family: var(--display);
+  text-transform: uppercase;
+  line-height: .96;
+  letter-spacing: -.005em;
+}
+.sec-head h2, .chi-text h2 { font-size: clamp(2rem, 5.5vw, 3.75rem); }
+.sec-head p {
+  margin-top: 1rem;
+  color: var(--fg-2);
+  font-size: clamp(1.0625rem, 1.6vw, 1.1875rem);
+  max-width: 48ch;
+}
+
+.ph {
+  background: rgba(255, 216, 77, .16);
+  color: var(--warn);
+  border-bottom: 1px dashed rgba(255, 216, 77, .65);
+  padding: 0 .28em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ---------- pulsanti ---------- */
+
+.btn {
+  display: inline-flex; align-items: center; gap: .6rem;
+  min-height: 58px; padding: 0 1.6rem;
+  border-radius: 3px;
+  font-size: 1.0625rem; font-weight: 600; letter-spacing: .005em;
+  transition: background-color .2s var(--ease), border-color .2s var(--ease),
+              color .2s var(--ease), transform .2s var(--ease);
+}
+.btn .ico { width: 22px; height: 22px; flex: none; }
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+
+.btn-wa { background: var(--orange); color: #150C06; }
+.btn-wa:hover { background: var(--orange-hi); }
+.btn-wa .ico { fill: #150C06; }
+.btn-wa .wa-tail { fill: var(--orange); }
+
+.btn-ghost { border: 1px solid var(--edge); color: var(--fg); }
+.btn-ghost:hover { border-color: var(--fg); background: rgba(255, 255, 255, .06); }
+.btn-ghost .ico { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linejoin: round; }
+
+.actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+
+/* ---------- topbar ---------- */
+
+.topbar {
+  position: fixed; inset: 0 0 auto 0; z-index: 50;
+  display: flex; align-items: center; gap: 2rem;
+  padding: 1rem var(--pad);
+  border-bottom: 1px solid transparent;
+  transition: background-color .3s var(--ease), border-color .3s var(--ease),
+              backdrop-filter .3s var(--ease);
+}
+.topbar::before {
+  content: ''; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(to bottom, rgba(12, 13, 15, .72), rgba(12, 13, 15, 0));
+  transition: opacity .3s var(--ease);
+}
+/* Da ferma occupa 76px; appena si scorre si stringe a ~58 e restituisce 18px
+   di altezza utile a ogni sezione. Su un portatile quei 18px contano. */
+.topbar.is-stuck {
+  background: rgba(22, 24, 26, .88);
+  backdrop-filter: blur(14px) saturate(1.2);
+  border-bottom-color: var(--line);
+  padding-block: .5rem;
+}
+.topbar.is-stuck .topbar-call { padding-block: .35rem; }
+.topbar.is-stuck .wordmark { font-size: 1.3rem; }
+.topbar.is-stuck::before { opacity: 0; }
+.wordmark {
+  font-family: var(--display);
+  font-size: 1.5rem; text-transform: uppercase; letter-spacing: .01em;
+  margin-right: auto;
+}
+.wordmark::after {
+  content: ''; display: inline-block;
+  width: 7px; height: 7px; margin-left: .4rem; vertical-align: .12em;
+  background: var(--orange);
+}
+.topnav { display: flex; gap: 1.75rem; }
+.topnav a {
+  font-size: .9375rem; font-weight: 500; color: #DEDCD9;
+  padding: .35rem 0; border-bottom: 1px solid transparent;
+  transition: color .2s var(--ease), border-color .2s var(--ease);
+}
+.topnav a:hover { color: var(--fg); border-bottom-color: var(--orange); }
+
+.topbar-call {
+  display: inline-flex; align-items: center; gap: .55rem;
+  font-weight: 600; font-size: .9375rem;
+  padding: .55rem .9rem; border: 1px solid var(--edge); border-radius: 3px;
+  transition: border-color .2s var(--ease), background-color .2s var(--ease);
+}
+.topbar-call:hover { border-color: var(--orange); background: rgba(242, 101, 34, .12); }
+.topbar-call .ico { width: 17px; height: 17px; fill: none; stroke: var(--orange); stroke-width: 1.8; stroke-linejoin: round; }
+
+/* ---------- hero ---------- */
+
+/* Tutto l'hero è dimensionato anche sull'ALTEZZA della finestra, non solo sulla
+   larghezza. Su uno schermo a scala 150% il browser dà ~625px CSS di altezza:
+   con misure legate solo alla larghezza i due pulsanti finivano sotto la piega,
+   cioè l'unica cosa per cui il sito esiste restava invisibile. */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex; align-items: flex-end;
+  padding: clamp(5.5rem, 9vh, 8rem) var(--pad) clamp(1.75rem, 5vh, 5rem);
+  overflow: hidden;
+}
+.hero-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+  /* la velatura è fredda: senza desaturare, una foto calda sotto il nero diventa fango */
+  filter: contrast(1.04) saturate(.62) brightness(1.04);
+}
+.hero-veil {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(11, 13, 16, .93) 4%, rgba(11, 13, 16, .55) 48%, rgba(11, 13, 16, .22) 100%),
+    linear-gradient(to right, rgba(11, 13, 16, .74) 0%, rgba(11, 13, 16, .18) 62%, transparent 100%);
+}
+.hero-inner {
+  position: relative;
+  width: 100%; max-width: var(--wrap); margin-inline: auto;
+}
+
+.pill {
+  display: inline-flex; align-items: center; gap: .6rem;
+  padding: .5rem 1rem .5rem .85rem;
+  border: 1px solid var(--line-2); border-radius: 100px;
+  background: rgba(22, 24, 26, .5);
+  font-size: .875rem; font-weight: 500; color: var(--fg);
+}
+/* Pallino arancio e fermo, non verde e pulsante: il verde lampeggiante è il codice
+   di "online adesso" e prometterebbe una reperibilità che nessuno ha confermato. */
+.dot {
+  position: relative; width: 9px; height: 9px; flex: none;
+  border-radius: 50%; background: var(--orange);
+}
+.dot::after {
+  content: ''; position: absolute; inset: -4px;
+  border-radius: 50%; border: 1px solid rgba(242, 101, 34, .5);
+}
+
+.hero h1 {
+  margin: clamp(.75rem, 2.2vh, 1.5rem) 0 0;
+  font-family: var(--display);
+  /* il min() fa vincere il vincolo più stretto tra larghezza e altezza */
+  font-size: clamp(2.25rem, min(8.4vw, 10vh), 6rem);
+  line-height: .9;
+  letter-spacing: -.02em;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+.hero h1 em { font-style: normal; color: var(--orange); }
+
+.lede {
+  margin-top: clamp(.75rem, 2.2vh, 1.5rem);
+  max-width: 42ch;
+  font-size: clamp(1.0625rem, min(1.9vw, 2.9vh), 1.3125rem);
+  color: #D9D6D2;
+}
+.hero .actions { margin-top: clamp(1.25rem, 3.2vh, 2.25rem); }
+.hero-note {
+  margin-top: clamp(.6rem, 1.8vh, 1.25rem);
+  font-size: .9375rem; color: var(--fg-2);
+}
+
+/* ---------- fascia scorrevole ---------- */
+
+.fascia {
+  overflow: hidden;
+  background: var(--orange);
+  color: #17110C;
+  border-block: 1px solid rgba(23, 17, 12, .22);
+}
+.fascia-pista {
+  display: flex;
+  width: max-content;
+  animation: scorri 42s linear infinite;
+}
+.fascia:hover .fascia-pista { animation-play-state: paused; }
+
+.fascia-gruppo {
+  display: flex; align-items: center;
+  gap: clamp(1.25rem, 2.5vw, 2.25rem);
+  padding: .85rem clamp(.625rem, 1.25vw, 1.125rem);
+}
+.fascia-voce {
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-size: clamp(1.125rem, 2vw, 1.625rem);
+  line-height: 1.1;
+  letter-spacing: .005em;
+  white-space: nowrap;
+}
+.fascia-stella { width: 16px; height: 16px; flex: none; fill: #17110C; opacity: .55; }
+
+/* Due gruppi identici affiancati: a metà corsa la pista torna al punto di
+   partenza e il salto è invisibile. */
+@keyframes scorri {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ---------- stacchi fotografici ---------- */
+
+/* Fascia a tutta larghezza che respira tra due sezioni. Sfuma sopra e sotto nel
+   fondo della pagina, così è un taglio nella pagina e non una foto incollata. */
+.stacco {
+  position: relative;
+  height: clamp(190px, 25vw, 330px);
+  overflow: hidden;
+}
+.stacco img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: saturate(.92) contrast(1.04);
+}
+/* La foto resta a piena luce: sono solo i bordi sopra e sotto a sciogliersi nel
+   fondo della pagina, così la fascia non ha un taglio netto ma nemmeno una
+   velatura che la spenge. Regge perché sono due texture ravvicinate: una foto
+   di un ambiente chiaro e vuoto, qui, tornerebbe a sembrare una finestra. */
+.stacco::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom,
+    var(--ink) 0%,
+    rgba(22, 24, 26, .12) 25%,
+    rgba(22, 24, 26, .12) 75%,
+    var(--ink) 100%);
+}
+/* dopo uno stacco il filetto di sezione è di troppo */
+.stacco + section { border-top: none; }
+
+/* ---------- percorso ---------- */
+
+.percorso {
+  max-width: var(--wrap); margin-inline: auto;
+  padding: var(--sec) var(--pad);
+}
+.percorso-title {
+  font-size: clamp(1.625rem, 4vw, 2.75rem);
+  max-width: 22ch;
+}
+.percorso-title span { color: var(--orange); }
+
+.track {
+  display: grid; gap: clamp(2rem, 4vw, 3rem);
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  grid-template-columns: repeat(3, 1fr);
+}
+.step { position: relative; padding-top: 1.75rem; }
+.step::before {
+  content: ''; position: absolute; inset: 0 0 auto 0; height: 1px;
+  background: var(--line-2);
+  transform: scaleX(1); transform-origin: left;
+}
+.step.is-now::before { background: var(--orange); }
+.anim .step::before { transform: scaleX(0); transition: transform .7s var(--ease); }
+.anim .step.is-in::before { transform: scaleX(1); }
+.anim .step:nth-child(2)::before { transition-delay: .14s; }
+.anim .step:nth-child(3)::before { transition-delay: .28s; }
+
+.step-mark {
+  position: absolute; top: -6px; left: 0;
+  width: 12px; height: 12px; background: var(--line-2);
+}
+.step.is-now .step-mark { width: 16px; height: 16px; top: -8px; background: var(--orange); }
+
+.step h3 {
+  font-family: var(--display); text-transform: uppercase;
+  font-size: clamp(1.5rem, 3vw, 2.25rem); line-height: 1;
+  letter-spacing: -.008em;
+}
+.step.is-now h3 { color: var(--orange); }
+.step p {
+  margin-top: .75rem; color: var(--fg-2);
+  font-size: clamp(1.0625rem, 1.4vw, 1.125rem);
+  max-width: 32ch;
+}
+
+/* ---------- servizi ---------- */
+
+.servizi {
+  max-width: var(--wrap); margin-inline: auto;
+  padding: var(--sec) var(--pad);
+  border-top: 1px solid var(--line);
+}
+.rows { border-top: 1px solid var(--line); }
+
+.row {
+  display: grid;
+  grid-template-columns: clamp(180px, 19vw, 280px) 1fr 44px;
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  padding: clamp(1.25rem, 2.4vw, 1.75rem) 1rem;
+  margin-inline: -1rem;
+  border-bottom: 1px solid var(--line);
+  transition: background-color .25s var(--ease);
+}
+.row:hover { background: rgba(255, 255, 255, .035); }
+
+.row-thumb {
+  display: block; overflow: hidden; border-radius: 3px;
+  aspect-ratio: 3 / 2; background: var(--ink-2);
+}
+.row-thumb img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: saturate(.9) brightness(.97);
+  transition: transform .5s var(--ease);
+}
+.row:hover .row-thumb img { transform: scale(1.05); }
+
+.row-text { display: block; }
+.row-head { display: flex; align-items: center; gap: .8rem; }
+.row-ico {
+  width: 30px; height: 30px; flex: none;
+  fill: none; stroke: var(--orange); stroke-width: 1.5;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.row-text h3 {
+  font-family: var(--display); text-transform: uppercase;
+  font-size: clamp(1.3125rem, 2.7vw, 2rem); line-height: 1;
+  letter-spacing: -.008em;
+  transition: color .25s var(--ease);
+}
+.row:hover .row-text h3 { color: var(--orange); }
+.row-text p { margin-top: .6rem; color: var(--fg-2); max-width: 62ch; }
+
+.row-arrow { display: grid; place-items: center; }
+.row-arrow svg {
+  width: 26px; height: 26px;
+  fill: none; stroke: var(--line-2); stroke-width: 1.6;
+  stroke-linecap: round; stroke-linejoin: round;
+  transition: stroke .25s var(--ease), transform .25s var(--ease);
+}
+.row:hover .row-arrow svg { stroke: var(--orange); transform: translateX(5px); }
+
+.rows-note {
+  margin-top: 1.5rem;
+  font-size: .9375rem; color: var(--fg-2);
+}
+
+/* ---------- chi sono ---------- */
+
+.chi {
+  max-width: var(--wrap); margin-inline: auto;
+  padding: var(--sec) var(--pad);
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: minmax(0, .82fr) minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+/* ritratto contenuto: su un portatile da 768px la sezione deve stare quasi tutta dentro */
+.chi-photo { position: relative; isolation: isolate; max-width: 23rem; }
+.chi-photo img {
+  position: relative; z-index: 1;
+  width: 100%; aspect-ratio: 6 / 7; object-fit: cover;
+  border-radius: 3px;
+  filter: contrast(1.02) saturate(.98);
+}
+.chi-photo::after {
+  content: ''; position: absolute; z-index: 0;
+  inset: 18px -18px -18px 18px;
+  border: 1px solid rgba(242, 101, 34, .55);
+  border-radius: 3px;
+}
+.chi-text p { margin-top: 1.15rem; color: var(--fg-2); max-width: 60ch; }
+.chi-text h2 + p { margin-top: 1.75rem; }
+.chi-text .sign {
+  margin-top: 2rem; padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  color: var(--fg); font-weight: 600;
+}
+
+/* ---------- come funziona ---------- */
+
+.come {
+  max-width: var(--wrap); margin-inline: auto;
+  padding: var(--sec) var(--pad);
+  border-top: 1px solid var(--line);
+}
+.passi {
+  --gap: clamp(2rem, 4vw, 3.5rem);
+  display: grid; gap: var(--gap);
+  grid-template-columns: repeat(3, 1fr);
+}
+.passo { position: relative; }
+.passo:not(:last-child)::after {
+  content: ''; position: absolute;
+  top: 29px; left: 74px; right: calc(-1 * var(--gap)); height: 1px;
+  background: repeating-linear-gradient(90deg, var(--line-2) 0 5px, transparent 5px 11px);
+}
+.passo-ico {
+  display: grid; place-items: center;
+  width: 58px; height: 58px;
+  border: 1px solid var(--line-2); border-radius: 3px;
+  background: var(--ink);
+}
+.passo-ico svg {
+  width: 30px; height: 30px;
+  fill: none; stroke: var(--orange); stroke-width: 1.6;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.passo h3 {
+  margin-top: 1.5rem;
+  font-family: var(--display); text-transform: uppercase;
+  font-size: clamp(1.25rem, 2.3vw, 1.625rem); line-height: 1.02;
+}
+.passo p { margin-top: .65rem; color: var(--fg-2); max-width: 34ch; }
+
+/* ---------- dicono di me ---------- */
+
+/* sezione più compatta delle altre: tre testimonianze lunghe più un titolo
+   sono già di per sé un blocco alto */
+.dicono {
+  max-width: var(--wrap); margin-inline: auto;
+  padding: calc(var(--sec) * .7) var(--pad);
+  border-top: 1px solid var(--line);
+}
+.dicono .sec-head { margin-bottom: clamp(1.25rem, 2.5vw, 2rem); }
+/* .avviso, .etichetta e .voce.esempio sono la marcatura dei contenuti non
+   verificati. Ora non sono in uso perché le recensioni sono state fornite come
+   reali: si tengono perché servono di nuovo il giorno in cui va pubblicato un
+   testo provvisorio, e perché DESIGN.md li registra come famiglia dei segnaposto. */
+.avviso {
+  margin: -1rem 0 2.5rem;
+  padding: .9rem 1.1rem;
+  border: 1px dashed rgba(255, 216, 77, .55);
+  border-radius: 3px;
+  background: rgba(255, 216, 77, .07);
+  color: #EDE2BE;
+  font-size: 1rem;
+  max-width: 62ch;
+}
+.avviso strong { color: var(--warn); }
+
+.voci {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+/* Ogni recensione è una targa, non una colonna di testo: superficie rialzata,
+   virgolette in Anton come texture, e in fondo la firma su una riga separata. */
+.voce {
+  position: relative;
+  display: flex; flex-direction: column;
+  padding: clamp(1.35rem, 2vw, 1.75rem);
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+  transition: border-color .25s var(--ease), transform .25s var(--ease),
+              background-color .25s var(--ease);
+}
+.voce:hover {
+  border-color: rgba(242, 101, 34, .5);
+  background: #212528;
+  transform: translateY(-3px);
+}
+/* Barlow, non Anton: in Anton le virgolette sono due rettangoli pieni e
+   sembrano un errore di rendering, non una citazione. */
+.voce::before {
+  content: '\201C';
+  position: absolute; top: .1rem; right: 1.2rem;
+  font-family: var(--text); font-weight: 700;
+  font-size: 6.5rem; line-height: 1;
+  color: var(--orange); opacity: .22;
+  pointer-events: none;
+}
+.voce.esempio { border-style: dashed; border-color: rgba(255, 216, 77, .55); }
+
+.etichetta {
+  display: inline-block; margin-bottom: 1rem;
+  padding: .15rem .5rem;
+  background: rgba(255, 216, 77, .16);
+  border: 1px dashed rgba(255, 216, 77, .55);
+  border-radius: 2px;
+  color: var(--warn);
+  font-size: .8125rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .06em;
+}
+
+.stelle { display: flex; gap: .2rem; margin-bottom: .75rem; }
+.stelle svg { width: 19px; height: 19px; fill: var(--orange); }
+
+.voce blockquote {
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  color: var(--fg);
+  max-width: 42ch;
+}
+.voce-chi {
+  display: flex; flex-direction: column; gap: .15rem;
+  margin-top: auto; padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 1rem;
+}
+.voce blockquote { margin-bottom: 1.1rem; }
+.voce-chi b {
+  color: var(--fg); font-weight: 600;
+  display: flex; align-items: center; gap: .55rem;
+}
+/* quadratino arancio: stesso segno del logo e dei passi del percorso */
+.voce-chi b::before {
+  content: ''; width: 7px; height: 7px; flex: none;
+  background: var(--orange);
+}
+.voce-chi span { color: var(--fg-2); padding-left: 1.25rem; }
+
+/* ---------- contatti ---------- */
+
+.cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  background: var(--orange);
+  color: #17110C;
+}
+.cta-inner {
+  display: flex; flex-direction: column; justify-content: center;
+  padding-block: clamp(2rem, 4vw, 3.25rem);
+  padding-right: clamp(2rem, 4vw, 4rem);
+  /* allinea il bordo sinistro alla stessa colonna del resto della pagina */
+  padding-left: max(var(--pad), calc((100vw - var(--wrap)) / 2 + var(--pad)));
+}
+.cta h2 {
+  font-family: var(--display); text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 3.5rem); line-height: .96;
+  letter-spacing: -.012em;
+  max-width: 16ch;
+}
+.cta-sub { margin-top: 1.25rem; max-width: 44ch; color: #17110C; font-size: 1.125rem; }
+
+.tel-big {
+  display: inline-block; margin-top: 1.75rem;
+  font-family: var(--display);
+  font-size: clamp(2rem, 5.2vw, 3.5rem); line-height: 1;
+  letter-spacing: -.01em;
+  border-bottom: 3px solid rgba(23, 17, 12, .35);
+  padding-bottom: .1em;
+  transition: border-color .2s var(--ease);
+}
+.tel-big:hover { border-bottom-color: #17110C; }
+.tel-big .ph { border-bottom: none; padding: 0 .18em; }
+
+.cta .actions { margin-top: 2rem; }
+.cta .btn-wa { background: #17110C; color: #F7EDE6; }
+.cta .btn-wa:hover { background: #000; }
+.cta .btn-wa .ico { fill: #F7EDE6; }
+.cta .btn-wa .wa-tail { fill: #17110C; }
+.cta .btn-ghost { border-color: var(--edge-cta); color: #17110C; }
+/* sull'arancio l'anello di focus bianco scende sotto 3:1: qui è scuro */
+.cta :focus-visible { outline-color: #17110C; }
+.cta .ph {
+  background: rgba(23, 17, 12, .14); color: #17110C;
+  border-bottom-color: rgba(23, 17, 12, .6);
+}
+.cta .btn-ghost:hover { border-color: #17110C; background: rgba(23, 17, 12, .08); }
+
+.cta-zone { margin-top: 1.5rem; font-size: .9375rem; color: #17110C; font-weight: 600; }
+
+.cta-media { position: relative; min-height: 320px; }
+.cta-media img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+}
+
+/* ---------- footer ---------- */
+
+.foot {
+  padding: clamp(2.5rem, 5vw, 4rem) var(--pad);
+  max-width: var(--wrap); margin-inline: auto;
+}
+.foot-name {
+  font-family: var(--display); text-transform: uppercase;
+  font-size: 1.375rem; letter-spacing: .01em;
+}
+.foot-meta { margin-top: .6rem; color: var(--fg-2); font-size: 1rem; }
+.foot-meta a { border-bottom: 1px solid var(--line-2); }
+.foot-meta a:hover { color: var(--fg); border-bottom-color: var(--orange); }
+
+/* ---------- barra fissa mobile ---------- */
+
+.bar {
+  position: fixed; inset: auto 0 0 0; z-index: 60;
+  display: none; grid-template-columns: 1fr 1fr;
+  border-top: 1px solid rgba(0, 0, 0, .35);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.bar a {
+  display: flex; align-items: center; justify-content: center; gap: .55rem;
+  min-height: 62px;
+  font-weight: 600; font-size: 1.0625rem;
+}
+.bar .ico { width: 21px; height: 21px; }
+.bar-wa { background: var(--orange); color: #150C06; }
+.bar-wa .ico { fill: #150C06; }
+.bar-wa .wa-tail { fill: var(--orange); }
+.bar-tel { background: #24282C; color: var(--fg); }
+.bar-tel .ico { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linejoin: round; }
+
+/* ---------- animazione d'ingresso ---------- */
+
+.anim [data-rise] {
+  opacity: 0; transform: translateY(18px);
+  transition: opacity .8s var(--ease), transform .8s var(--ease);
+}
+.anim [data-rise].is-in { opacity: 1; transform: none; }
+.anim [data-rise="2"] { transition-delay: .09s; }
+.anim [data-rise="3"] { transition-delay: .18s; }
+.anim [data-rise="4"] { transition-delay: .27s; }
+.anim [data-rise="5"] { transition-delay: .36s; }
+
+/* =========================================================================
+   Adattamenti
+   ========================================================================= */
+
+@media (max-width: 1080px) {
+  .chi { grid-template-columns: 1fr; }
+  .chi-photo { max-width: 26rem; }
+  .chi-photo::after { inset: 14px -14px -14px 14px; }
+}
+
+@media (max-width: 900px) {
+  .topnav { display: none; }
+  .track { grid-template-columns: 1fr; gap: 2rem; }
+  .voci { grid-template-columns: 1fr; gap: 2rem; }
+  .voce blockquote { max-width: 52ch; }
+  .step p { max-width: 46ch; }
+  .passi { grid-template-columns: 1fr; }
+  .passo:not(:last-child)::after { display: none; }
+  .cta { grid-template-columns: 1fr; }
+  .cta-inner { max-width: none; margin-left: 0; }
+  .cta-media { min-height: 260px; order: -1; }
+}
+
+@media (max-width: 760px) {
+  /* la barra fissa cresce con la safe area dell'iPhone: il footer deve scansarsi */
+  body { padding-bottom: calc(62px + env(safe-area-inset-bottom)); }
+  .bar { display: grid; }
+  .topbar-call span { display: none; }
+  .topbar-call {
+    padding: 0; width: 48px; height: 48px;
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  /* La barra fissa in basso è alta 62px: l'hero deve finire sopra di lei, non
+     dietro. Su uno schermo da 640px anche la riga del preventivo ci sta. */
+  .hero {
+    padding-top: clamp(4.5rem, 8vh, 6rem);
+    padding-bottom: calc(1rem + 62px);
+  }
+  .hero-veil {
+    background: linear-gradient(to top,
+      rgba(11, 13, 16, .94) 8%,
+      rgba(11, 13, 16, .78) 52%,
+      rgba(11, 13, 16, .42) 100%);
+  }
+  /* Su mobile la miniatura in colonna galleggiava a metà di un testo alto il triplo.
+     Diventa una fascia a tutta larghezza sopra il titolo: si legge in verticale. */
+  .row {
+    grid-template-columns: 1fr;
+    gap: .9rem;
+    align-items: start;
+    padding: 1.5rem 1rem;
+  }
+  .row-thumb { aspect-ratio: 16 / 9; }
+  .row-arrow { display: none; }
+  /* 17px è il minimo dichiarato: qui legge un over 50 col pollice, sotto stress */
+  .row-text p { font-size: 1.0625rem; }
+  .row-head { gap: .55rem; }
+  .row-ico { width: 22px; height: 22px; }
+  .hero .actions .btn,
+  .cta .actions .btn { flex: 1 1 100%; justify-content: center; }
+}
+
+
+/* Telefoni bassi (360x640 e simili): l'hero deve chiudersi comunque sopra la
+   barra fissa, riga del preventivo compresa. I pulsanti restano sopra i 48px
+   di area tappabile. */
+@media (max-width: 760px) and (max-height: 700px) {
+  .hero { padding-top: 4.25rem; padding-bottom: calc(.35rem + 62px); }
+  .hero .actions { gap: .5rem; }
+  .hero .actions .btn { min-height: 50px; }
+  .hero-note { margin-top: .4rem; }
+  .pill { padding-block: .4rem; font-size: .8125rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+  }
+  .anim [data-rise] { opacity: 1; transform: none; }
+  .anim .step::before { transform: scaleX(1); }
+  /* la fascia si ferma e resta leggibile, non sparisce */
+  .fascia-pista { animation: none; }
+}

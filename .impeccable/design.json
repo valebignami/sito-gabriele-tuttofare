@@ -1,0 +1,706 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-23T00:00:00Z",
+  "title": "Design System: Gabriele — Tuttofare per la casa",
+  "extensions": {
+    "colorMeta": {
+      "arancio-segnaletica": {
+        "role": "primary",
+        "displayName": "Arancio segnaletica",
+        "canonical": "oklch(0.673 0.181 42.5)",
+        "tonalRamp": [
+          "oklch(0.15 0.181 42.5)",
+          "oklch(0.26 0.181 42.5)",
+          "oklch(0.37 0.181 42.5)",
+          "oklch(0.48 0.181 42.5)",
+          "oklch(0.59 0.181 42.5)",
+          "oklch(0.70 0.181 42.5)",
+          "oklch(0.81 0.181 42.5)",
+          "oklch(0.92 0.181 42.5)"
+        ]
+      },
+      "arancio-acceso": {
+        "role": "primary",
+        "displayName": "Arancio acceso",
+        "canonical": "oklch(0.723 0.176 43.5)",
+        "tonalRamp": [
+          "oklch(0.15 0.176 43.5)",
+          "oklch(0.26 0.176 43.5)",
+          "oklch(0.37 0.176 43.5)",
+          "oklch(0.48 0.176 43.5)",
+          "oklch(0.59 0.176 43.5)",
+          "oklch(0.70 0.176 43.5)",
+          "oklch(0.81 0.176 43.5)",
+          "oklch(0.92 0.176 43.5)"
+        ]
+      },
+      "antracite": {
+        "role": "neutral",
+        "displayName": "Antracite",
+        "canonical": "oklch(0.229 0.006 247)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 247)",
+          "oklch(0.26 0.006 247)",
+          "oklch(0.37 0.006 247)",
+          "oklch(0.48 0.006 247)",
+          "oklch(0.59 0.006 247)",
+          "oklch(0.70 0.006 247)",
+          "oklch(0.81 0.006 247)",
+          "oklch(0.92 0.006 247)"
+        ]
+      },
+      "antracite-alto": {
+        "role": "neutral",
+        "displayName": "Antracite alto",
+        "canonical": "oklch(0.264 0.006 247)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 247)",
+          "oklch(0.26 0.006 247)",
+          "oklch(0.37 0.006 247)",
+          "oklch(0.48 0.006 247)",
+          "oklch(0.59 0.006 247)",
+          "oklch(0.70 0.006 247)",
+          "oklch(0.81 0.006 247)",
+          "oklch(0.92 0.006 247)"
+        ]
+      },
+      "antracite-barra": {
+        "role": "neutral",
+        "displayName": "Antracite barra",
+        "canonical": "oklch(0.303 0.008 240)",
+        "tonalRamp": [
+          "oklch(0.15 0.008 240)",
+          "oklch(0.26 0.008 240)",
+          "oklch(0.37 0.008 240)",
+          "oklch(0.48 0.008 240)",
+          "oklch(0.59 0.008 240)",
+          "oklch(0.70 0.008 240)",
+          "oklch(0.81 0.008 240)",
+          "oklch(0.92 0.008 240)"
+        ]
+      },
+      "nero-velo": {
+        "role": "neutral",
+        "displayName": "Nero velo",
+        "canonical": "oklch(0.175 0.009 250)",
+        "tonalRamp": [
+          "oklch(0.15 0.009 250)",
+          "oklch(0.26 0.009 250)",
+          "oklch(0.37 0.009 250)",
+          "oklch(0.48 0.009 250)",
+          "oklch(0.59 0.009 250)",
+          "oklch(0.70 0.009 250)",
+          "oklch(0.81 0.009 250)",
+          "oklch(0.92 0.009 250)"
+        ]
+      },
+      "nero-topbar": {
+        "role": "neutral",
+        "displayName": "Nero topbar",
+        "canonical": "oklch(0.157 0.005 250)",
+        "tonalRamp": [
+          "oklch(0.15 0.005 250)",
+          "oklch(0.26 0.005 250)",
+          "oklch(0.37 0.005 250)",
+          "oklch(0.48 0.005 250)",
+          "oklch(0.59 0.005 250)",
+          "oklch(0.70 0.005 250)",
+          "oklch(0.81 0.005 250)",
+          "oklch(0.92 0.005 250)"
+        ]
+      },
+      "nero-pieno": {
+        "role": "neutral",
+        "displayName": "Nero pieno",
+        "canonical": "oklch(0 0 0)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.26 0 0)",
+          "oklch(0.37 0 0)",
+          "oklch(0.48 0 0)",
+          "oklch(0.59 0 0)",
+          "oklch(0.70 0 0)",
+          "oklch(0.81 0 0)",
+          "oklch(0.92 0 0)"
+        ]
+      },
+      "ombra-barra": {
+        "role": "neutral",
+        "displayName": "Ombra barra",
+        "canonical": "rgba(0, 0, 0, .35)"
+      },
+      "calce": {
+        "role": "neutral",
+        "displayName": "Calce",
+        "canonical": "oklch(0.960 0.004 85)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 85)",
+          "oklch(0.26 0.004 85)",
+          "oklch(0.37 0.004 85)",
+          "oklch(0.48 0.004 85)",
+          "oklch(0.59 0.004 85)",
+          "oklch(0.70 0.004 85)",
+          "oklch(0.81 0.004 85)",
+          "oklch(0.92 0.004 85)"
+        ]
+      },
+      "grigio-voce": {
+        "role": "neutral",
+        "displayName": "Grigio voce",
+        "canonical": "oklch(0.732 0.010 240)",
+        "tonalRamp": [
+          "oklch(0.15 0.010 240)",
+          "oklch(0.26 0.010 240)",
+          "oklch(0.37 0.010 240)",
+          "oklch(0.48 0.010 240)",
+          "oklch(0.59 0.010 240)",
+          "oklch(0.70 0.010 240)",
+          "oklch(0.81 0.010 240)",
+          "oklch(0.92 0.010 240)"
+        ]
+      },
+      "grigio-navigazione": {
+        "role": "neutral",
+        "displayName": "Grigio navigazione",
+        "canonical": "oklch(0.891 0.004 85)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 85)",
+          "oklch(0.26 0.004 85)",
+          "oklch(0.37 0.004 85)",
+          "oklch(0.48 0.004 85)",
+          "oklch(0.59 0.004 85)",
+          "oklch(0.70 0.004 85)",
+          "oklch(0.81 0.004 85)",
+          "oklch(0.92 0.004 85)"
+        ]
+      },
+      "grigio-lede": {
+        "role": "neutral",
+        "displayName": "Grigio lede",
+        "canonical": "oklch(0.874 0.005 80)",
+        "tonalRamp": [
+          "oklch(0.15 0.005 80)",
+          "oklch(0.26 0.005 80)",
+          "oklch(0.37 0.005 80)",
+          "oklch(0.48 0.005 80)",
+          "oklch(0.59 0.005 80)",
+          "oklch(0.70 0.005 80)",
+          "oklch(0.81 0.005 80)",
+          "oklch(0.92 0.005 80)"
+        ]
+      },
+      "nero-su-arancio": {
+        "role": "neutral",
+        "displayName": "Nero caldo su arancio",
+        "canonical": "oklch(0.196 0.016 55)",
+        "tonalRamp": [
+          "oklch(0.15 0.016 55)",
+          "oklch(0.26 0.016 55)",
+          "oklch(0.37 0.016 55)",
+          "oklch(0.48 0.016 55)",
+          "oklch(0.59 0.016 55)",
+          "oklch(0.70 0.016 55)",
+          "oklch(0.81 0.016 55)",
+          "oklch(0.92 0.016 55)"
+        ]
+      },
+      "nero-su-pulsante": {
+        "role": "neutral",
+        "displayName": "Nero freddo su pulsante arancio",
+        "canonical": "oklch(0.171 0.019 50)",
+        "tonalRamp": [
+          "oklch(0.15 0.019 50)",
+          "oklch(0.26 0.019 50)",
+          "oklch(0.37 0.019 50)",
+          "oklch(0.48 0.019 50)",
+          "oklch(0.59 0.019 50)",
+          "oklch(0.70 0.019 50)",
+          "oklch(0.81 0.019 50)",
+          "oklch(0.92 0.019 50)"
+        ]
+      },
+      "calce-su-nero": {
+        "role": "neutral",
+        "displayName": "Calce calda",
+        "canonical": "oklch(0.951 0.014 55)",
+        "tonalRamp": [
+          "oklch(0.15 0.014 55)",
+          "oklch(0.26 0.014 55)",
+          "oklch(0.37 0.014 55)",
+          "oklch(0.48 0.014 55)",
+          "oklch(0.59 0.014 55)",
+          "oklch(0.70 0.014 55)",
+          "oklch(0.81 0.014 55)",
+          "oklch(0.92 0.014 55)"
+        ]
+      },
+      "giallo-segnaposto": {
+        "role": "secondary",
+        "displayName": "Giallo segnaposto",
+        "canonical": "oklch(0.888 0.155 90)",
+        "tonalRamp": [
+          "oklch(0.15 0.155 90)",
+          "oklch(0.26 0.155 90)",
+          "oklch(0.37 0.155 90)",
+          "oklch(0.48 0.155 90)",
+          "oklch(0.59 0.155 90)",
+          "oklch(0.70 0.155 90)",
+          "oklch(0.81 0.155 90)",
+          "oklch(0.92 0.155 90)"
+        ]
+      },
+      "filetto": {
+        "role": "neutral",
+        "displayName": "Filetto",
+        "canonical": "rgba(255, 255, 255, .13)"
+      },
+      "filetto-forte": {
+        "role": "neutral",
+        "displayName": "Filetto forte",
+        "canonical": "rgba(255, 255, 255, .28)"
+      },
+      "bordo-interattivo": {
+        "role": "neutral",
+        "displayName": "Bordo interattivo",
+        "canonical": "rgba(255, 255, 255, .46)"
+      },
+      "bordo-interattivo-cta": {
+        "role": "neutral",
+        "displayName": "Bordo interattivo sull'arancio",
+        "canonical": "rgba(23, 17, 12, .64)"
+      },
+      "giallo-avviso": {
+        "role": "secondary",
+        "displayName": "Giallo avviso",
+        "canonical": "oklch(0.900 0.055 95)",
+        "tonalRamp": [
+          "oklch(0.15 0.055 95)",
+          "oklch(0.26 0.055 95)",
+          "oklch(0.37 0.055 95)",
+          "oklch(0.48 0.055 95)",
+          "oklch(0.59 0.055 95)",
+          "oklch(0.70 0.055 95)",
+          "oklch(0.81 0.055 95)",
+          "oklch(0.92 0.055 95)"
+        ]
+      },
+      "bordo-fascia": {
+        "role": "neutral",
+        "displayName": "Bordo fascia",
+        "canonical": "rgba(23, 17, 12, .22)"
+      },
+      "antracite-rialzato": {
+        "role": "neutral",
+        "displayName": "Antracite rialzato",
+        "canonical": "oklch(0.284 0.006 240)",
+        "tonalRamp": [
+          "oklch(0.15 0.006 240)",
+          "oklch(0.26 0.006 240)",
+          "oklch(0.37 0.006 240)",
+          "oklch(0.48 0.006 240)",
+          "oklch(0.59 0.006 240)",
+          "oklch(0.70 0.006 240)",
+          "oklch(0.81 0.006 240)",
+          "oklch(0.92 0.006 240)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Solo l'h1 dell'hero, in Anton maiuscolo spezzato a mano. Il minimo di 2.5rem esiste perché la parola più lunga non sbordi a 360px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Gli h2 di sezione: Cosa faccio, Come funziona, Sono Gabriele."
+      },
+      "cta-title": {
+        "displayName": "Titolo della fascia contatti",
+        "purpose": "Il titolo sul fondo arancio, su misura 16ch."
+      },
+      "tel-big": {
+        "displayName": "Numero grande",
+        "purpose": "Il telefono nella fascia contatti, trattato come un titolo cliccabile con sottolineatura da 3px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Il titolo dell'affermazione del percorso professionale, con la seconda frase in arancio."
+      },
+      "row-title": {
+        "displayName": "Titolo di servizio",
+        "purpose": "Il nome del servizio dentro la riga, affiancato dall'icona di linea; diventa arancio in hover."
+      },
+      "step-title": {
+        "displayName": "Titolo di tappa",
+        "purpose": "Il mestiere di ogni tappa del percorso professionale. Sale fino a 2.25rem perche a corpo minore le tre tappe si leggevano come un divisore grafico invece che come una sezione con un contenuto proprio."
+      },
+      "passo-title": {
+        "displayName": "Titolo di passo",
+        "purpose": "I tre passi di Come funziona."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "La firma in alto, con il quadratino arancio in coda. Misura fissa."
+      },
+      "footer-name": {
+        "displayName": "Nome nel footer",
+        "purpose": "La firma in fondo alla pagina. Misura fissa."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Il paragrafo d'apertura dell'hero, unico testo di corpo che sale oltre i 17px."
+      },
+      "section-sub": {
+        "displayName": "Sottotitolo di sezione",
+        "purpose": "Il paragrafo sotto un h2, su misura 48ch."
+      },
+      "cta-sub": {
+        "displayName": "Sottotitolo dei contatti",
+        "purpose": "Il paragrafo sul fondo arancio, a misura fissa perché la colonna è già vincolata."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Tutto il testo corrente in Barlow 400 a 17px, con misure di riga dichiarate in ch per contesto. Non scende mai sotto i 17px, a nessuna larghezza."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "I metadati del footer. A 16px e non a 15px perché contengono il numero di telefono, che si legge e si tocca."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigazione, pulsante di chiamata in alto, note sotto le liste, nota dell'hero, zona operativa. Testo non essenziale alla decisione."
+      },
+      "pill": {
+        "displayName": "Pill",
+        "purpose": "Solo la pillola di disponibilità: il testo più piccolo del sistema."
+      },
+      "fascia-voce": {
+        "displayName": "Voce della fascia",
+        "purpose": "Le parole della fascia scorrevole. Unico uso di Anton con tracking positivo: in movimento le lettere condensate hanno bisogno di un filo d'aria in piu."
+      },
+      "quote": {
+        "displayName": "Citazione",
+        "purpose": "Il testo di una recensione, unico testo di corpo in calce piena invece che in grigio voce. Misura 42ch e non piu stretta perche le recensioni vere sono molto piu lunghe dei testi provvisori che avevano dettato la misura iniziale: a 34ch diventavano un muro di righe corte."
+      },
+      "tag": {
+        "displayName": "Tag",
+        "purpose": "Solo l'etichetta ESEMPIO sopra una recensione fittizia. Gradino piu piccolo della scala, giustificato dal fatto che e un'etichetta in maiuscolo spaziato, non un testo da leggere in sequenza."
+      },
+      "quote-mark": {
+        "displayName": "Virgolette decorative",
+        "purpose": "Unico valore fuori dalla scala leggibile. Barlow 700 e non Anton perche in Anton le virgolette sono due rettangoli pieni e a quel corpo sembrano un errore di rendering, non una citazione: e l'unico punto del sito in cui il font del testo viene usato in grande. Supera il tetto di 6rem del display perche non e testo ma una texture al 22% di opacita dietro il contenuto, pointer-events none; il tetto dei 6rem sulla scala leggibile resta valido."
+      },
+      "step-body": {
+        "displayName": "Testo di tappa",
+        "purpose": "La descrizione di una tappa del percorso, su misura 32ch, cresciuta insieme al suo titolo. Condivide la scala con la citazione di una recensione."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16, .84, .34, 1)",
+        "purpose": "L'unico easing del progetto: parte veloce e si posa. Non aggiungerne altri."
+      },
+      {
+        "name": "durata-hover",
+        "value": "0.2s",
+        "purpose": "Pulsanti: colore di fondo, bordo, colore del testo e translateY(-2px)."
+      },
+      {
+        "name": "durata-riga",
+        "value": "0.25s",
+        "purpose": "Riga servizio: fondo, colore del titolo, colore e scorrimento della freccia."
+      },
+      {
+        "name": "durata-miniatura-scala",
+        "value": "0.5s",
+        "purpose": "Ingrandimento a 1.05 della miniatura in hover: l'unico effetto rimasto sull'immagine."
+      },
+      {
+        "name": "durata-topbar",
+        "value": "0.3s",
+        "purpose": "Passaggio della barra in alto a vetro scuro sfocato oltre i 24px di scorrimento."
+      },
+      {
+        "name": "durata-filetto-percorso",
+        "value": "0.7s",
+        "purpose": "Tracciamento da sinistra del filetto sopra ogni passo del percorso, con ritardi .14s e .28s."
+      },
+      {
+        "name": "durata-ingresso",
+        "value": "0.8s",
+        "purpose": "Ingresso dell'hero: opacità e translateY(18px), con ritardi .09s / .18s / .27s / .36s."
+      },
+      {
+        "name": "scorri",
+        "value": "42s linear infinite",
+        "purpose": "La fascia dei servizi da translateX(0) a translateX(-50%). Unico movimento continuo e unica animazione non governata da --ease: una corsa costante non deve accelerare ne rallentare, altrimenti si nota il ciclo. In pausa al passaggio del mouse, ferma con prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "chi-sono",
+        "value": "1080px"
+      },
+      {
+        "name": "mobile",
+        "value": "900px"
+      },
+      {
+        "name": "barra-fissa",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Pulsante WhatsApp",
+      "kind": "button",
+      "refersTo": "button-whatsapp",
+      "description": "Azione primaria su fondo scuro: fondo arancio, testo nero freddo, icona a due tracciati con la coda ridipinta del colore di fondo.",
+      "html": "<a class=\"ds-btn ds-btn-wa\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Z\"/><path class=\"ds-wa-tail\" d=\"M8.6 7.3c.2-.4.4-.4.7-.4h.6c.2 0 .5 0 .7.5l.9 2c.1.3 0 .5-.1.7l-.5.6c-.2.2-.3.4-.1.7a7.6 7.6 0 0 0 3.5 3c.3.2.5.1.7-.1l.7-.8c.2-.2.4-.2.6-.1l2 .9c.3.1.4.3.4.5v.7c0 .8-.7 1.5-1.5 1.6-.4 0-.8 0-1.4-.2a11 11 0 0 1-6.7-6.6c-.3-.9-.4-1.5-.3-2 0-.4.2-.7.4-1Z\"/></svg>Scrivimi su WhatsApp</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: .6rem; min-height: 58px; padding: 0 1.6rem; border-radius: 3px; font-family: 'Barlow', system-ui, sans-serif; font-size: 1.0625rem; font-weight: 600; letter-spacing: .005em; text-decoration: none; transition: background-color .2s cubic-bezier(.16,.84,.34,1), border-color .2s cubic-bezier(.16,.84,.34,1), color .2s cubic-bezier(.16,.84,.34,1), transform .2s cubic-bezier(.16,.84,.34,1); } .ds-btn .ds-ico { width: 22px; height: 22px; flex: none; } .ds-btn:hover { transform: translateY(-2px); } .ds-btn:active { transform: translateY(0); } .ds-btn:focus-visible { outline: 2px solid #F5F3F0; outline-offset: 3px; border-radius: 2px; } .ds-btn-wa { background: #F26522; color: #150C06; } .ds-btn-wa:hover { background: #FF7C3C; } .ds-btn-wa .ds-ico { fill: #150C06; } .ds-btn-wa .ds-wa-tail { fill: #F26522; }"
+    },
+    {
+      "name": "Pulsante Chiama (ghost)",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Azione secondaria su fondo scuro: bordo bianco al 46% (sopra 3:1, WCAG 1.4.11) e icona a tratto; in hover il bordo diventa pieno e compare un fondo bianco al 6%.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5L17 13l4 1.5v3a2.5 2.5 0 0 1-2.7 2.5A16.5 16.5 0 0 1 3 5.7 2.5 2.5 0 0 1 5.5 3Z\"/></svg>Chiama ora</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; gap: .6rem; min-height: 58px; padding: 0 1.6rem; border: 1px solid rgba(255,255,255,.46); border-radius: 3px; color: #F5F3F0; font-family: 'Barlow', system-ui, sans-serif; font-size: 1.0625rem; font-weight: 600; letter-spacing: .005em; text-decoration: none; transition: background-color .2s cubic-bezier(.16,.84,.34,1), border-color .2s cubic-bezier(.16,.84,.34,1), transform .2s cubic-bezier(.16,.84,.34,1); } .ds-btn-ghost .ds-ico { width: 22px; height: 22px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linejoin: round; } .ds-btn-ghost:hover { border-color: #F5F3F0; background: rgba(255,255,255,.06); transform: translateY(-2px); } .ds-btn-ghost:active { transform: translateY(0); } .ds-btn-ghost:focus-visible { outline: 2px solid #F5F3F0; outline-offset: 3px; }"
+    },
+    {
+      "name": "Pulsanti sulla fascia arancio",
+      "kind": "button",
+      "refersTo": "button-whatsapp-on-orange",
+      "description": "Nella fascia contatti tutto si inverte: primario nero caldo su arancio con hover nero pieno, ghost con bordo nero al 64%, anello di focus scuro.",
+      "html": "<div class=\"ds-cta-scope\"><a class=\"ds-btn-wa-orange\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Z\"/><path class=\"ds-wa-tail\" d=\"M8.6 7.3c.2-.4.4-.4.7-.4h.6c.2 0 .5 0 .7.5l.9 2c.1.3 0 .5-.1.7l-.5.6c-.2.2-.3.4-.1.7a7.6 7.6 0 0 0 3.5 3c.3.2.5.1.7-.1l.7-.8c.2-.2.4-.2.6-.1l2 .9c.3.1.4.3.4.5v.7c0 .8-.7 1.5-1.5 1.6-.4 0-.8 0-1.4-.2a11 11 0 0 1-6.7-6.6c-.3-.9-.4-1.5-.3-2 0-.4.2-.7.4-1Z\"/></svg>Scrivimi su WhatsApp</a><a class=\"ds-btn-ghost-orange\" href=\"#\">Chiama ora</a></div>",
+      "css": ".ds-cta-scope { display: flex; flex-wrap: wrap; gap: .75rem; background: #F26522; padding: 2rem; } .ds-cta-scope :focus-visible { outline: 2px solid #17110C; outline-offset: 3px; border-radius: 2px; } .ds-btn-wa-orange, .ds-btn-ghost-orange { display: inline-flex; align-items: center; gap: .6rem; min-height: 58px; padding: 0 1.6rem; border-radius: 3px; font-family: 'Barlow', system-ui, sans-serif; font-size: 1.0625rem; font-weight: 600; text-decoration: none; transition: background-color .2s cubic-bezier(.16,.84,.34,1), border-color .2s cubic-bezier(.16,.84,.34,1), transform .2s cubic-bezier(.16,.84,.34,1); } .ds-btn-wa-orange { background: #17110C; color: #F7EDE6; } .ds-btn-wa-orange .ds-ico { width: 22px; height: 22px; flex: none; fill: #F7EDE6; } .ds-btn-wa-orange .ds-wa-tail { fill: #17110C; } .ds-btn-wa-orange:hover { background: #000; transform: translateY(-2px); } .ds-btn-ghost-orange { border: 1px solid rgba(23,17,12,.64); color: #17110C; } .ds-btn-ghost-orange:hover { border-color: #17110C; background: rgba(23,17,12,.08); transform: translateY(-2px); }"
+    },
+    {
+      "name": "Pillola disponibilità",
+      "kind": "chip",
+      "refersTo": "pill-disponibilita",
+      "description": "Segnale di stato in cima all'hero: bordo al 28%, raggio pieno, pallino arancio fermo con anello statico. Non pulsa e non è verde: un lampeggio prometterebbe una reperibilità non confermata.",
+      "html": "<p class=\"ds-pill\"><span class=\"ds-dot\"></span>Disponibile per urgenze — Milano e provincia</p>",
+      "css": ".ds-pill { display: inline-flex; align-items: center; gap: .6rem; margin: 0; padding: .5rem 1rem .5rem .85rem; border: 1px solid rgba(255,255,255,.28); border-radius: 100px; background: rgba(22,24,26,.5); color: #F5F3F0; font-family: 'Barlow', system-ui, sans-serif; font-size: .875rem; font-weight: 500; } .ds-dot { position: relative; width: 9px; height: 9px; flex: none; border-radius: 50%; background: #F26522; } .ds-dot::after { content: ''; position: absolute; inset: -4px; border-radius: 50%; border: 1px solid rgba(242,101,34,.5); }"
+    },
+    {
+      "name": "Stacco fotografico",
+      "kind": "custom",
+      "refersTo": "stacco",
+      "description": "Fascia fotografica a tutta larghezza che separa due sezioni al posto di un filetto. Immagine scurita e velata anche al centro, alt vuoto perche decorativa; la sezione seguente perde il proprio bordo superiore.",
+      "html": "<div class=\"ds-stacco\"><img src=\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='400'><rect width='1200' height='400' fill='%23554'/></svg>\" alt=\"\" loading=\"lazy\"></div><section class=\"ds-dopo-stacco\"><p>La sezione che segue non ha filetto superiore.</p></section>",
+      "css": ".ds-stacco { position: relative; height: 330px; overflow: hidden; } .ds-stacco img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.55) contrast(1.05) brightness(.72); } .ds-stacco::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, #16181A 0%, rgba(22,24,26,.42) 28%, rgba(22,24,26,.42) 72%, #16181A 100%); } .ds-dopo-stacco { border-top: none; padding: 2rem 0 0; font-family: 'Barlow', system-ui, sans-serif; font-size: 1.0625rem; color: #A9AEB3; }"
+    },
+    {
+      "name": "Fascia scorrevole",
+      "kind": "custom",
+      "refersTo": "fascia",
+      "description": "Striscia arancio sotto l'hero: due gruppi identici di parole in Anton separati da stelline, in loop da 42s. aria-hidden perche ripete servizi gia elencati per esteso poco sotto.",
+      "html": "<div class=\"ds-fascia\" aria-hidden=\"true\"><div class=\"ds-fascia-pista\"><div class=\"ds-fascia-gruppo\"><span class=\"ds-fascia-voce\">Idraulica</span><svg class=\"ds-fascia-stella\" viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg><span class=\"ds-fascia-voce\">Caldaie</span><svg class=\"ds-fascia-stella\" viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg><span class=\"ds-fascia-voce\">Muratura</span><svg class=\"ds-fascia-stella\" viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg><span class=\"ds-fascia-voce\">Piastrelle</span><svg class=\"ds-fascia-stella\" viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg></div><div class=\"ds-fascia-gruppo\"><span class=\"ds-fascia-voce\">Idraulica</span><svg class=\"ds-fascia-stella\" viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg><span class=\"ds-fascia-voce\">Caldaie</span><svg class=\"ds-fascia-stella\" viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg><span class=\"ds-fascia-voce\">Muratura</span><svg class=\"ds-fascia-stella\" viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg><span class=\"ds-fascia-voce\">Piastrelle</span><svg class=\"ds-fascia-stella\" viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg></div></div></div>",
+      "css": ".ds-fascia { overflow: hidden; background: #F26522; color: #17110C; border-block: 1px solid rgba(23,17,12,.22); } .ds-fascia-pista { display: flex; width: max-content; animation: ds-scorri 42s linear infinite; } .ds-fascia:hover .ds-fascia-pista { animation-play-state: paused; } .ds-fascia-gruppo { display: flex; align-items: center; gap: 2.25rem; padding: .85rem 1.125rem; } .ds-fascia-voce { font-family: 'Anton', 'Arial Narrow', sans-serif; text-transform: uppercase; font-size: 1.625rem; line-height: 1.1; letter-spacing: .005em; white-space: nowrap; } .ds-fascia-stella { width: 16px; height: 16px; flex: none; fill: #17110C; opacity: .55; } @keyframes ds-scorri { from { transform: translateX(0); } to { transform: translateX(-50%); } } @media (prefers-reduced-motion: reduce) { .ds-fascia-pista { animation: none; } }"
+    },
+    {
+      "name": "Riga servizio",
+      "kind": "custom",
+      "refersTo": "row-servizio",
+      "description": "Componente firma: il servizio è un link a piena riga con miniatura 3:2, testata icona+titolo, descrizione e freccia. Sostituisce la griglia di schede rifiutata dal contratto di direzione.",
+      "html": "<a class=\"ds-row\" href=\"#\"><span class=\"ds-row-thumb\"><img src=\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='200'><rect width='300' height='200' fill='%231D2023'/></svg>\" alt=\"\"></span><span class=\"ds-row-text\"><span class=\"ds-row-head\"><svg class=\"ds-row-ico\" viewBox=\"0 0 32 32\" aria-hidden=\"true\"><path d=\"M7 11h12a5 5 0 0 1 5 5v9\"/><path d=\"M4 8h6v6H4z\"/><circle cx=\"24\" cy=\"27\" r=\"3\"/></svg><h3>Idraulica e caldaie</h3></span><p>Installazione e sostituzione di caldaie, perdite, scarichi otturati, rubinetteria, radiatori, autoclavi e allacci.</p></span><span class=\"ds-row-arrow\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></span></a>",
+      "css": ".ds-row { display: grid; grid-template-columns: clamp(180px, 19vw, 280px) 1fr 44px; align-items: center; gap: 2.5rem; padding: 1.75rem 1rem; border-top: 1px solid rgba(255,255,255,.13); border-bottom: 1px solid rgba(255,255,255,.13); color: #F5F3F0; text-decoration: none; transition: background-color .25s cubic-bezier(.16,.84,.34,1); } .ds-row:hover { background: rgba(255,255,255,.035); } .ds-row-thumb { display: block; overflow: hidden; border-radius: 3px; aspect-ratio: 3 / 2; background: #1D2023; } .ds-row-thumb img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.9) brightness(.97); transition: transform .5s cubic-bezier(.16,.84,.34,1); } .ds-row:hover .ds-row-thumb img { transform: scale(1.05); } .ds-row-head { display: flex; align-items: center; gap: .8rem; } .ds-row-ico { width: 30px; height: 30px; flex: none; fill: none; stroke: #F26522; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; } .ds-row-text h3 { margin: 0; font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: 2rem; line-height: 1; letter-spacing: -.008em; transition: color .25s cubic-bezier(.16,.84,.34,1); } .ds-row:hover .ds-row-text h3 { color: #F26522; } .ds-row-text p { margin: .6rem 0 0; font-family: 'Barlow', system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; color: #A9AEB3; max-width: 62ch; } .ds-row-arrow { display: grid; place-items: center; } .ds-row-arrow svg { width: 26px; height: 26px; fill: none; stroke: rgba(255,255,255,.28); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; transition: stroke .25s cubic-bezier(.16,.84,.34,1), transform .25s cubic-bezier(.16,.84,.34,1); } .ds-row:hover .ds-row-arrow svg { stroke: #F26522; transform: translateX(5px); } .ds-row:focus-visible { outline: 2px solid #F5F3F0; outline-offset: 3px; } @media (max-width: 760px) { .ds-row { grid-template-columns: 1fr; gap: .9rem; align-items: start; padding: 1.5rem 1rem; } .ds-row-thumb { aspect-ratio: 16 / 9; } .ds-row-arrow { display: none; } .ds-row-head { gap: .55rem; } .ds-row-ico { width: 22px; height: 22px; } }"
+    },
+    {
+      "name": "Passo del percorso",
+      "kind": "custom",
+      "refersTo": "row-servizio",
+      "description": "Tappa della linea del tempo professionale: filetto superiore, marcatore quadrato, titolo in Anton. Lo stato corrente (is-now) è l'unico in arancio e con marcatore ingrandito.",
+      "html": "<ol class=\"ds-track\"><li class=\"ds-step\"><span class=\"ds-step-mark\" aria-hidden=\"true\"></span><h3>Capo squadra</h3><p>Responsabile di cantiere: uomini, tempi e lavoro consegnato finito.</p></li><li class=\"ds-step ds-is-now\"><span class=\"ds-step-mark\" aria-hidden=\"true\"></span><h3>Idraulico</h3><p>Specializzazione in caldaie, impianti e rifacimento bagni.</p></li></ol>",
+      "css": ".ds-track { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; margin: 0; padding: 0; list-style: none; } .ds-step { position: relative; padding-top: 1.75rem; } .ds-step::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 1px; background: rgba(255,255,255,.28); } .ds-step.ds-is-now::before { background: #F26522; } .ds-step-mark { position: absolute; top: -6px; left: 0; width: 12px; height: 12px; background: rgba(255,255,255,.28); } .ds-step.ds-is-now .ds-step-mark { width: 16px; height: 16px; top: -8px; background: #F26522; } .ds-step h3 { margin: 0; font-family: 'Anton', 'Arial Narrow', sans-serif; font-weight: 400; text-transform: uppercase; font-size: 2.25rem; line-height: 1; letter-spacing: -.008em; color: #F5F3F0; } .ds-step.ds-is-now h3 { color: #F26522; } .ds-step p { margin: .75rem 0 0; font-family: 'Barlow', system-ui, sans-serif; font-size: 1.125rem; line-height: 1.6; color: #A9AEB3; max-width: 32ch; }"
+    },
+    {
+      "name": "Barra in alto",
+      "kind": "nav",
+      "refersTo": "topbar-call",
+      "description": "Barra fissa: gradiente in dissolvenza a riposo, vetro scuro sfocato dopo 24px di scorrimento. Il pulsante di chiamata usa il bordo interattivo al 46% e sotto i 760px diventa un quadrato di 48px.",
+      "html": "<header class=\"ds-topbar ds-is-stuck\"><a class=\"ds-wordmark\" href=\"#\">Gabriele</a><nav class=\"ds-topnav\"><a href=\"#\">Servizi</a><a href=\"#\">Chi sono</a><a href=\"#\">Contatti</a></nav><a class=\"ds-topbar-call\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5L17 13l4 1.5v3a2.5 2.5 0 0 1-2.7 2.5A16.5 16.5 0 0 1 3 5.7 2.5 2.5 0 0 1 5.5 3Z\"/></svg><span>+39 XXX XXX XXXX</span></a></header>",
+      "css": ".ds-topbar { display: flex; align-items: center; gap: 2rem; padding: 1rem 2rem; border-bottom: 1px solid transparent; color: #F5F3F0; transition: background-color .3s cubic-bezier(.16,.84,.34,1), border-color .3s cubic-bezier(.16,.84,.34,1); } .ds-topbar.ds-is-stuck { background: rgba(22,24,26,.88); backdrop-filter: blur(14px) saturate(1.2); border-bottom-color: rgba(255,255,255,.13); } .ds-wordmark { font-family: 'Anton', 'Arial Narrow', sans-serif; font-size: 1.5rem; text-transform: uppercase; letter-spacing: .01em; margin-right: auto; color: inherit; text-decoration: none; } .ds-wordmark::after { content: ''; display: inline-block; width: 7px; height: 7px; margin-left: .4rem; vertical-align: .12em; background: #F26522; } .ds-topnav { display: flex; gap: 1.75rem; } .ds-topnav a { font-family: 'Barlow', system-ui, sans-serif; font-size: .9375rem; font-weight: 500; color: #DEDCD9; text-decoration: none; padding: .35rem 0; border-bottom: 1px solid transparent; transition: color .2s cubic-bezier(.16,.84,.34,1), border-color .2s cubic-bezier(.16,.84,.34,1); } .ds-topnav a:hover { color: #F5F3F0; border-bottom-color: #F26522; } .ds-topbar-call { display: inline-flex; align-items: center; gap: .55rem; font-family: 'Barlow', system-ui, sans-serif; font-weight: 600; font-size: .9375rem; color: inherit; text-decoration: none; padding: .55rem .9rem; border: 1px solid rgba(255,255,255,.46); border-radius: 3px; transition: border-color .2s cubic-bezier(.16,.84,.34,1), background-color .2s cubic-bezier(.16,.84,.34,1); } .ds-topbar-call:hover { border-color: #F26522; background: rgba(242,101,34,.12); } .ds-topbar-call .ds-ico { width: 17px; height: 17px; fill: none; stroke: #F26522; stroke-width: 1.8; stroke-linejoin: round; } @media (max-width: 900px) { .ds-topnav { display: none; } } @media (max-width: 760px) { .ds-topbar-call span { display: none; } .ds-topbar-call { padding: 0; width: 48px; height: 48px; justify-content: center; } }"
+    },
+    {
+      "name": "Barra fissa mobile",
+      "kind": "nav",
+      "refersTo": "bar-whatsapp",
+      "description": "Sotto i 760px: due metà a piena larghezza, WhatsApp arancio e Chiama antracite, alte 62px, con padding per la safe area inferiore.",
+      "html": "<div class=\"ds-bar\" aria-label=\"Contatti rapidi\"><a class=\"ds-bar-wa\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Z\"/><path class=\"ds-wa-tail\" d=\"M8.6 7.3c.2-.4.4-.4.7-.4h.6c.2 0 .5 0 .7.5l.9 2c.1.3 0 .5-.1.7l-.5.6c-.2.2-.3.4-.1.7a7.6 7.6 0 0 0 3.5 3c.3.2.5.1.7-.1l.7-.8c.2-.2.4-.2.6-.1l2 .9c.3.1.4.3.4.5v.7c0 .8-.7 1.5-1.5 1.6-.4 0-.8 0-1.4-.2a11 11 0 0 1-6.7-6.6c-.3-.9-.4-1.5-.3-2 0-.4.2-.7.4-1Z\"/></svg>WhatsApp</a><a class=\"ds-bar-tel\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5L17 13l4 1.5v3a2.5 2.5 0 0 1-2.7 2.5A16.5 16.5 0 0 1 3 5.7 2.5 2.5 0 0 1 5.5 3Z\"/></svg>Chiama</a></div>",
+      "css": ".ds-bar { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid rgba(0,0,0,.35); padding-bottom: env(safe-area-inset-bottom); } .ds-bar a { display: flex; align-items: center; justify-content: center; gap: .55rem; min-height: 62px; font-family: 'Barlow', system-ui, sans-serif; font-weight: 600; font-size: 1.0625rem; text-decoration: none; } .ds-bar .ds-ico { width: 21px; height: 21px; } .ds-bar-wa { background: #F26522; color: #150C06; } .ds-bar-wa .ds-ico { fill: #150C06; } .ds-bar-wa .ds-wa-tail { fill: #F26522; } .ds-bar-tel { background: #24282C; color: #F5F3F0; } .ds-bar-tel .ds-ico { fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linejoin: round; }"
+    },
+    {
+      "name": "Voce (recensione)",
+      "kind": "card",
+      "refersTo": "voce",
+      "description": "Pannello su superficie rialzata con virgolette decorative ritagliate dal bordo. Colonna flex con la firma in margin-top auto: le firme si allineano in fondo e i pannelli restano della stessa altezza.",
+      "html": "<li class=\"ds-voce\"><span class=\"ds-stelle\" role=\"img\" aria-label=\"Cinque stelle su cinque\"><svg viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg><svg viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg><svg viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg><svg viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg><svg viewBox=\"0 0 24 24\"><path d=\"m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.4l6.5-.9z\"/></svg></span><blockquote>Caldaia morta di venerdi sera, con due bambini piccoli in casa. Ha trovato il guasto in mezz'ora e per pranzo avevamo di nuovo l'acqua calda. Prezzo onesto, detto prima e rispettato.</blockquote><p class=\"ds-voce-chi\"><b>Marco P.</b><span>Cinisello Balsamo &middot; riparazione caldaia d'urgenza</span></p></li>",
+      "css": ".ds-voce { position: relative; display: flex; flex-direction: column; padding: 2rem; background: #1D2023; border: 1px solid rgba(255,255,255,.13); border-radius: 3px; overflow: hidden; list-style: none; transition: border-color .25s cubic-bezier(.16,.84,.34,1), transform .25s cubic-bezier(.16,.84,.34,1), background-color .25s cubic-bezier(.16,.84,.34,1); } .ds-voce:hover { border-color: rgba(242,101,34,.5); background: #212528; transform: translateY(-3px); } .ds-voce::before { content: '\\201C'; position: absolute; top: .1rem; right: 1.2rem; font-family: 'Barlow', system-ui, sans-serif; font-weight: 700; font-size: 6.5rem; line-height: 1; color: #F26522; opacity: .22; pointer-events: none; } .ds-voce.ds-esempio { border-style: dashed; border-color: rgba(255,216,77,.55); } .ds-stelle { display: flex; gap: .2rem; margin-bottom: 1rem; } .ds-stelle svg { width: 19px; height: 19px; fill: #F26522; } .ds-voce blockquote { margin: 0 0 1.5rem; font-family: 'Barlow', system-ui, sans-serif; font-size: 1.125rem; line-height: 1.6; color: #F5F3F0; max-width: 42ch; } .ds-voce-chi { display: flex; flex-direction: column; gap: .15rem; margin: auto 0 0; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,.13); font-family: 'Barlow', system-ui, sans-serif; font-size: 1rem; } .ds-voce-chi b { color: #F5F3F0; font-weight: 600; display: flex; align-items: center; gap: .55rem; } .ds-voce-chi b::before { content: ''; width: 7px; height: 7px; flex: none; background: #F26522; } .ds-voce-chi span { color: #A9AEB3; padding-left: 1.25rem; }"
+    },
+    {
+      "name": "Avviso da sostituire",
+      "kind": "custom",
+      "refersTo": "avviso",
+      "description": "Riquadro tratteggiato che spiega a chi pubblica quale contenuto va sostituito. Testo in giallo desaturato: il giallo pieno su un paragrafo intero era illeggibile. Definito ma non in uso in pagina: le recensioni non sono piu provvisorie.",
+      "html": "<p class=\"ds-avviso\"><strong>Da sostituire prima di pubblicare.</strong> Questi tre testi sono esempi che mostrano come apparira la sezione: servono recensioni vere, di clienti veri.</p>",
+      "css": ".ds-avviso { margin: 0 0 2.5rem; padding: .9rem 1.1rem; border: 1px dashed rgba(255,216,77,.55); border-radius: 3px; background: rgba(255,216,77,.07); color: #EDE2BE; font-family: 'Barlow', system-ui, sans-serif; font-size: 1rem; line-height: 1.6; max-width: 62ch; } .ds-avviso strong { color: #FFD84D; }"
+    },
+    {
+      "name": "Segnaposto dato mancante",
+      "kind": "custom",
+      "refersTo": "placeholder-ph",
+      "description": "Marca un dato non ancora noto. Giallo sul fondo scuro, nero caldo trasparente dentro la fascia arancio, senza tratteggio dentro il numero grande. Si rimuove sostituendo il dato, mai togliendo lo stile.",
+      "html": "<p class=\"ds-sign\">Gabriele <span class=\"ds-ph\">[COGNOME]</span> — Milano e provincia</p><div class=\"ds-cta-ph-scope\"><p>Numero: <span class=\"ds-ph\">+39 XXX XXX XXXX</span></p></div>",
+      "css": ".ds-sign { margin: 0; font-family: 'Barlow', system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; color: #F5F3F0; font-weight: 600; } .ds-ph { background: rgba(255,216,77,.16); color: #FFD84D; border-bottom: 1px dashed rgba(255,216,77,.65); padding: 0 .28em; font-weight: 600; white-space: nowrap; } .ds-cta-ph-scope { margin-top: 1rem; background: #F26522; padding: 1rem; font-family: 'Barlow', system-ui, sans-serif; color: #17110C; font-weight: 600; } .ds-cta-ph-scope .ds-ph { background: rgba(23,17,12,.14); color: #17110C; border-bottom-color: rgba(23,17,12,.6); }"
+    },
+    {
+      "name": "Skip link",
+      "kind": "nav",
+      "refersTo": "skip-link",
+      "description": "Collegamento di salto fuori schermo finché non riceve il focus, poi ancorato in alto a sinistra su fondo arancio.",
+      "html": "<a class=\"ds-skip\" href=\"#servizi\">Salta al contenuto</a>",
+      "css": ".ds-skip { position: absolute; left: -9999px; top: 0; z-index: 100; background: #F26522; color: #16181A; padding: .75rem 1.25rem; font-family: 'Barlow', system-ui, sans-serif; font-weight: 600; text-decoration: none; } .ds-skip:focus { left: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Il cartello di cantiere",
+    "overview": "Il mondo visivo è quello di un cartello appeso al ponteggio: fondo antracite, poche parole enormi in maiuscolo, un arancio segnaletica che compare solo dove serve guardare, e filetti sottili come tracciati a matita sul muro. La tesi, fissata nel DIRECTION CONTRACT in cima a index.html, è che il committente non sia «un tuttofare improvvisato» ma «un capocantiere che ha aggiunto un secondo mestiere»: di conseguenza la pagina rifiuta la griglia di sei schede identiche icona+titolo+testo e tratta i servizi come righe larghe, leggibili scorrendo col pollice.\n\nLa densità è bassa e verticale. Ogni sezione è una fascia separata dalla successiva da un filetto da 1px, non da una scatola. Non esiste una sola ombra in tutto il foglio di stile: la profondità è data dalla velatura delle fotografie e dalla differenza di luminosità tra i fondi, mai da un rilievo simulato. Le fotografie sanguinano a pieno formato sotto un velo nero, mai ritagliate dentro una card.\n\nIl contratto di direzione dichiara esplicitamente due rifiuti visivi: nessuna scheda con ombra e nessun gradiente di testo. Entrambi sono rispettati nel codice.",
+    "keyCharacteristics": [
+      "Fondo antracite unico per tutta la pagina, spezzato da una sola fascia arancio piena (i contatti).",
+      "Un solo accento cromatico, usato come segnale e non come decorazione.",
+      "Titoli in Anton maiuscolo con interlinea sotto 1 e tracking negativo; corpo in Barlow.",
+      "Superfici piatte: zero ombre, raggio 3px quasi ovunque, filetti bianchi trasparenti come unico divisore.",
+      "Fotografia a pieno sanguinamento, desaturata e velata di nero freddo.",
+      "Un solo movimento continuo, decorativo e dichiarato: la fascia di servizi che scorre sotto l'hero.",
+      "Nessuna dipendenza esterna a runtime: font self-hostati in fonts/, immagini locali in img/, icone SVG inline."
+    ],
+    "rules": [
+      {
+        "name": "La Regola del Segnale",
+        "body": "L'arancio è un segnale, non un colore d'arredo. Compare dove il visitatore deve agire (pulsanti, numero di telefono, freccia della riga) o dove deve guardare (passo corrente del percorso, stato di disponibilità, icona del servizio). Se una nuova superficie usa l'arancio per «vivacizzare», l'uso è sbagliato.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regola dei Due Neri",
+        "body": "Il nero sopra l'arancio non è mai lo stesso nero del fondo pagina. Su pulsante arancio si usa il nero freddo #150C06; sulla fascia arancio piena si usa il nero caldo #17110C. Non sostituirli con l'antracite di fondo.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regola del Bordo Che Si Vede",
+        "body": "Un bordo che delimita un comando non è un filetto decorativo: usa --edge su fondo scuro e --edge-cta sull'arancio, perché deve stare sopra 3:1. Il filetto al 28% resta per ciò che non si tocca. Confonderli è una regressione di accessibilità, non una scelta estetica.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regola del Contenuto Marcato",
+        "body": "Un contenuto che non e ancora vero non deve mai essere indistinguibile da uno vero. Il sistema ha tre marcatori gialli e vanno usati: .ph per un dato mancante dentro una frase, .etichetta per un blocco fittizio, .avviso per spiegare a chi pubblica che cosa va sostituito e dove trovare le istruzioni. Vale in modo particolare per le recensioni: pubblicare testimonianze inventate senza marcarle non e un compromesso estetico, e una pratica commerciale ingannevole. Se il marcatore da fastidio, la risposta e sostituire il contenuto, non togliere il marcatore.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regola del Giallo Onesto",
+        "body": "Il segnaposto è l'unico modo di rappresentare un dato mancante. Un cognome, una partita IVA o un numero non ancora noti si scrivono dentro .ph in maiuscolo tra parentesi quadre; non si inventano e non si nascondono. Sul fondo scuro è giallo, sulla fascia arancio è nero caldo trasparente: il ruolo non cambia, cambia solo il fondo su cui deve restare leggibile.",
+        "section": "colors"
+      },
+      {
+        "name": "La Regola Anton Dice, Barlow Spiega",
+        "body": "Anton compare solo su titoli, wordmark, nome del footer e numero di telefono, sempre in maiuscolo. Una didascalia, un'etichetta o un pulsante in Anton sono un errore; un titolo in Barlow è un errore simmetrico.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regola dello Zero Eyebrow",
+        "body": "Sopra i titoli non esiste nessuna etichettina sovratitolo. Una sezione si apre con il suo h2 e, al massimo, un paragrafo sotto. Il codice non contiene una sola classe eyebrow e non va introdotta.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regola dei Diciassette",
+        "body": "Il testo che il visitatore deve leggere per decidere non scende mai sotto 1.0625rem (17px), a nessuna larghezza. Sotto i 17px vivono soltanto le etichette di servizio (15px) e la pillola di stato (14px), che si capiscono anche senza leggerle parola per parola. Se un testo di corpo ha bisogno di rimpicciolirsi per stare nel layout, è il layout a essere sbagliato.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regola dell'Interlinea Corta",
+        "body": "Ogni titolo in Anton ha interlinea tra .9 e 1.02, sempre sotto l'unità. Le righe di un titolo devono quasi toccarsi.",
+        "section": "typography"
+      },
+      {
+        "name": "La Regola del Pollice",
+        "body": "Sotto i 760px l'azione non è mai più lontana di un pollice: la barra fissa in basso è sempre presente e i pulsanti nel flusso diventano bersagli a piena larghezza. Ogni nuova sezione mobile deve rispettare i 62px di ingombro della barra più la safe area.",
+        "section": "layout"
+      },
+      {
+        "name": "La Regola Piatta",
+        "body": "Le superfici sono piatte a riposo e piatte in hover. Un cambio di stato si esprime con colore, bordo, sfondo trasparente o un translateY(-2px), mai con un'ombra che appare.",
+        "section": "elevation"
+      },
+      {
+        "name": "La Regola della Fascia Velata",
+        "body": "Una fotografia a tutta larghezza dentro una pagina scura va tenuta sotto il livello di luminosita del contenuto, altrimenti compete con esso. Nello stacco si ottiene con il filtro sull'immagine (brightness .72, saturate .55) e con una velatura che non sfuma solo agli estremi ma resta al 42% anche al centro: correzione fatta dopo aver visto l'alternativa sbagliata, perche con il solo centro scoperto una foto chiara in mezzo a una pagina antracite legge come una finestra ritagliata nel fondo, non come un respiro fra due sezioni.",
+        "section": "elevation"
+      },
+      {
+        "name": "La Regola dei Tre Pixel",
+        "body": "Se un elemento ha bisogno di un raggio, il raggio è 3px. Se sembra volerne di più, probabilmente non doveva essere una scatola.",
+        "section": "shapes"
+      },
+      {
+        "name": "La Regola del Quadratino",
+        "body": "L'indicatore puntuale del sistema e un quadrato arancio pieno a spigolo vivo, 7x7px. Ricorre nel wordmark, nelle tappe del percorso e nelle firme delle recensioni; un nuovo indicatore che non sia quel segno spezza un motivo che tiene insieme tre sezioni distanti.",
+        "section": "shapes"
+      },
+      {
+        "name": "La Regola del Momento Unico",
+        "body": "L'ingresso della pagina è un evento solo, in cima. Nessuna sezione più in basso deve entrare in dissolvenza allo scroll: sotto l'hero l'unico movimento consentito è il tracciamento dei filetti del percorso.",
+        "section": "motion"
+      },
+      {
+        "name": "La Regola del Doppio Freno",
+        "body": "Ogni comportamento in movimento è disattivato due volte: dal CSS con prefers-reduced-motion e dal JavaScript che legge lo stesso media query e applica direttamente lo stato finale. Un nuovo comportamento deve superare entrambi i freni e, in loro assenza, deve degradare mostrando il contenuto, mai nascondendolo.",
+        "section": "motion"
+      },
+      {
+        "name": "La Regola del Loop Onesto",
+        "body": "Il movimento continuo e ammesso quando e decorativo, vietato quando implica uno stato in tempo reale. La fascia che scorre elenca servizi: non afferma nulla che possa essere vero o falso in questo istante, ed e marcata aria-hidden proprio perche e ornamento. Il pallino di disponibilita che pulsava e stato fermato per la ragione opposta: un lampeggio e il codice visivo di online adesso e prometteva una reperibilita che nessuno ha confermato. Il discrimine non e quanto si muove, e che cosa sta dicendo.",
+        "section": "motion"
+      },
+      {
+        "name": "La Regola del Ciclo Invisibile",
+        "body": "Un'animazione in loop non deve mai mostrare la propria giuntura. Nella fascia questo e garantito da due gruppi di contenuto larghi esattamente uguale, che rendono translateX(-50%) identico al punto di partenza: qualunque modifica al contenuto va fatta su entrambi i gruppi.",
+        "section": "motion"
+      }
+    ],
+    "dos": [
+      "Do usare le tre variabili di spazio --pad, --wrap, --sec per qualsiasi nuova sezione, invece di inventare padding numerici.",
+      "Do tenere Anton in maiuscolo con interlinea sotto l'unità, e Barlow per tutto il resto.",
+      "Do riservare l'arancio alle azioni e ai segnali di stato (Regola del Segnale).",
+      "Do usare --edge / --edge-cta per il bordo di qualsiasi comando, e --line-2 solo per i segni che non si toccano (Regola del Bordo Che Si Vede).",
+      "Do invertire i neri quando si lavora sulla fascia arancio: testo, pulsante primario e anello di focus diventano #17110C (Regola dei Due Neri).",
+      "Do separare i blocchi con un filetto da 1px al 13% di bianco, non con una scatola.",
+      "Do tenere ogni testo di corpo a 17px o più, a qualunque larghezza (Regola dei Diciassette).",
+      "Do dare a ogni bersaglio tattile almeno 48px per lato, e 58px ai pulsanti nel flusso.",
+      "Do marcare ogni contenuto non ancora vero con il marcatore della scala giusta - .ph per un dato, .etichetta per un blocco, .avviso per l'istruzione a chi pubblica (Regola del Contenuto Marcato).",
+      "Do tenere tutte le risorse locali: font in fonts/, immagini in img/, icone SVG inline nel markup.",
+      "Do modificare entrambi i gruppi della fascia scorrevole quando se ne cambia il contenuto, altrimenti il ciclo diventa visibile (Regola del Ciclo Invisibile).",
+      "Do usare il quadratino arancio 7x7 come indicatore puntuale quando ne serve uno nuovo, invece di un pallino o di un'icona (Regola del Quadratino).",
+      "Do rifare la verifica di altezza quando si tocca --sec: su un portatile da 768px ogni sezione deve stare in una schermata, con la sola eccezione voluta dell'elenco dei servizi, che e una lista e deve scorrere."
+    ],
+    "donts": [
+      "Don't introdurre dipendenze esterne a runtime — nessun CDN, nessun Google Fonts, nessuna libreria di icone, nessun analytics. È un vincolo di prodotto oltre che visivo.",
+      "Don't trasformare i servizi in una griglia di schede identiche icona+titolo+testo: il contratto di direzione la rifiuta esplicitamente e le righe larghe sono il componente firma del sito.",
+      "Don't mettere un'etichettina sovratitolo (eyebrow) sopra un h2 (Regola dello Zero Eyebrow).",
+      "Don't aggiungere box-shadow: oggi il valore ricorre zero volte e le superfici sono piatte per scelta (Regola Piatta).",
+      "Don't usare gradienti sul testo; i gradienti esistono solo come velo sulle fotografie, come tratteggio e come dissolvenza della barra in alto a riposo.",
+      "Don't aumentare il raggio oltre i 3px, con l'unica eccezione della pillola di disponibilità (Regola dei Tre Pixel).",
+      "Don't mettere in loop qualcosa che afferma uno stato in tempo reale - in particolare non va reintrodotto un indicatore di disponibilita che pulsa. Il loop decorativo della fascia e ammesso proprio perche non afferma nulla (Regola del Loop Onesto).",
+      "Don't usare il verde: è stato rimosso dal sistema insieme al pallino lampeggiante.",
+      "Don't far scendere un testo di corpo sotto i 17px per farlo stare nel layout.",
+      "Don't introdurre un form di contatto: il sito non ha backend e il primo contatto è per progetto WhatsApp o telefono.",
+      "Don't pubblicare le tre recensioni d'esempio come se fossero vere, ne togliere l'etichetta ESEMPIO, il filetto giallo o l'avviso per farle sembrare autentiche: vanno sostituite con recensioni di clienti veri o rimosse del tutto.",
+      "Don't inventare numeri di clienti, tempi di intervento o promesse di reperibilita: non esistono dati a supporto e non c'e un componente per mostrarli.",
+      "Don't rimuovere .avviso, .etichetta e .voce.esempio perche oggi non hanno istanze in pagina: sono l'infrastruttura che permette di ripubblicare un contenuto provvisorio marcato senza reinventarla.",
+      "Don't sommare uno stacco fotografico e il filetto della sezione seguente: lo stacco e gia il divisore, e i due insieme danno due separatori sovrapposti."
+    ]
+  }
+}

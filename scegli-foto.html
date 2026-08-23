@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scegli le foto — sito di Gabriele</title>
+<style>
+  :root { --ink:#16181A; --ink2:#1D2023; --fg:#F5F3F0; --fg2:#A9AEB3; --line:rgba(255,255,255,.13); --orange:#F26522; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--ink); color:var(--fg);
+         font-family: system-ui,-apple-system,'Segoe UI',sans-serif; line-height:1.55; }
+  .testata { padding: clamp(2rem,5vw,4rem) clamp(1.25rem,4vw,3rem) 1rem; border-bottom:1px solid var(--line); }
+  .testata h1 { margin:0 0 .75rem; font-size: clamp(1.5rem,3.5vw,2.25rem); }
+  .testata p { margin:.5rem 0; color:var(--fg2); max-width:70ch; }
+  code { background:var(--ink2); padding:.1em .4em; border-radius:3px; color:#FFD84D; font-size:.9em; }
+  .gruppo { padding: clamp(2rem,4vw,3.5rem) clamp(1.25rem,4vw,3rem); border-bottom:1px solid var(--line); }
+  .gruppo header { margin-bottom:1.5rem; }
+  .gruppo h2 { margin:0 0 .4rem; font-size: clamp(1.25rem,2.5vw,1.75rem); }
+  .gruppo header p { margin:.25rem 0; color:var(--fg2); max-width:70ch; }
+  .dest { font-size:.9rem; }
+  .griglia { display:grid; gap:1rem; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); }
+  .scheda { margin:0; background:var(--ink2); border:1px solid var(--line); border-radius:4px; overflow:hidden; }
+  .scheda img { display:block; width:100%; height:100%; object-fit:cover; }
+  .scheda a { display:block; }
+  .orizzontale a { aspect-ratio: 3/2; }
+  .verticale a { aspect-ratio: 4/5; }
+  figcaption { display:flex; justify-content:space-between; gap:.5rem;
+               padding:.55rem .7rem; font-size:.8125rem; color:var(--fg2);
+               border-top:1px solid var(--line); }
+  figcaption b { color:var(--fg); font-weight:600; }
+  .scheda:hover { border-color:var(--orange); }
+</style>
+</head>
+<body>
+<div class="testata">
+  <h1>Scegli le foto</h1>
+  <p>Ogni riquadro è una candidata. Cliccala per vederla grande. Sotto ogni foto c'è il suo nome.</p>
+  <p><b>Come si usa:</b> dimmi i nomi delle foto che preferisci (per esempio <code>hero-04</code>, <code>bagno-02</code>) e le monto io nel sito. In alternativa, per farlo a mano: prendi il file da <code>img/scelta/</code>, rinominalo come indicato in ogni sezione e mettilo dentro <code>img/</code> al posto di quello vecchio.</p>
+  <p>Le foto sono ritagliate qui sotto nella stessa proporzione con cui appariranno nel sito, così vedi già cosa si perde ai bordi.</p>
+  <p class="dest">128 candidate in totale.</p>
+</div>
+
+  <section class="gruppo">
+    <header>
+      <h2>Foto grande iniziale</h2>
+      <p>La prima cosa che si vede, a tutta schermata. Sopra ci va il titolo bianco: meglio se ha una zona ampia e poco affollata.</p>
+      <p class="dest">Nel sito diventa <code>img/hero.jpg</code> — 20 candidate</p>
+    </header>
+    <div class="griglia">
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-01.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-01.jpg" alt="hero-01.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-01.jpg</b> <span>340 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-02.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-02.jpg" alt="hero-02.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-02.jpg</b> <span>268 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-03.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-03.jpg" alt="hero-03.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-03.jpg</b> <span>275 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-04.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-04.jpg" alt="hero-04.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-04.jpg</b> <span>458 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-05.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-05.jpg" alt="hero-05.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-05.jpg</b> <span>266 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-06.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-06.jpg" alt="hero-06.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-06.jpg</b> <span>706 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-07.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-07.jpg" alt="hero-07.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-07.jpg</b> <span>506 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-08.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-08.jpg" alt="hero-08.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-08.jpg</b> <span>411 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-09.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-09.jpg" alt="hero-09.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-09.jpg</b> <span>627 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-10.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-10.jpg" alt="hero-10.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-10.jpg</b> <span>467 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-11.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-11.jpg" alt="hero-11.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-11.jpg</b> <span>208 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-12.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-12.jpg" alt="hero-12.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-12.jpg</b> <span>267 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-13.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-13.jpg" alt="hero-13.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-13.jpg</b> <span>208 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-14.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-14.jpg" alt="hero-14.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-14.jpg</b> <span>162 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-15.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-15.jpg" alt="hero-15.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-15.jpg</b> <span>211 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-16.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-16.jpg" alt="hero-16.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-16.jpg</b> <span>311 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-17.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-17.jpg" alt="hero-17.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-17.jpg</b> <span>282 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-18.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-18.jpg" alt="hero-18.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-18.jpg</b> <span>353 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-19.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-19.jpg" alt="hero-19.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-19.jpg</b> <span>141 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/hero-20.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/hero-20.jpg" alt="hero-20.jpg" loading="lazy">
+        </a>
+        <figcaption><b>hero-20.jpg</b> <span>88 KB</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="gruppo">
+    <header>
+      <h2>Ritratto di Gabriele</h2>
+      <p>Sezione &quot;Sono Gabriele&quot;. È la foto che costruisce la fiducia: da sostituire con una foto vera appena possibile.</p>
+      <p class="dest">Nel sito diventa <code>img/gabriele.jpg</code> — 16 candidate</p>
+    </header>
+    <div class="griglia">
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-01.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-01.jpg" alt="ritratto-01.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-01.jpg</b> <span>397 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-02.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-02.jpg" alt="ritratto-02.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-02.jpg</b> <span>258 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-03.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-03.jpg" alt="ritratto-03.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-03.jpg</b> <span>419 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-04.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-04.jpg" alt="ritratto-04.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-04.jpg</b> <span>659 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-05.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-05.jpg" alt="ritratto-05.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-05.jpg</b> <span>406 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-06.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-06.jpg" alt="ritratto-06.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-06.jpg</b> <span>468 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-07.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-07.jpg" alt="ritratto-07.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-07.jpg</b> <span>492 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-08.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-08.jpg" alt="ritratto-08.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-08.jpg</b> <span>357 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-09.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-09.jpg" alt="ritratto-09.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-09.jpg</b> <span>418 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-10.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-10.jpg" alt="ritratto-10.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-10.jpg</b> <span>320 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-11.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-11.jpg" alt="ritratto-11.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-11.jpg</b> <span>398 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-12.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-12.jpg" alt="ritratto-12.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-12.jpg</b> <span>221 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-13.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-13.jpg" alt="ritratto-13.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-13.jpg</b> <span>469 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-14.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-14.jpg" alt="ritratto-14.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-14.jpg</b> <span>248 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-15.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-15.jpg" alt="ritratto-15.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-15.jpg</b> <span>419 KB</span></figcaption>
+      </figure>
+      <figure class="scheda verticale">
+        <a href="img/scelta/ritratto-16.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/ritratto-16.jpg" alt="ritratto-16.jpg" loading="lazy">
+        </a>
+        <figcaption><b>ritratto-16.jpg</b> <span>411 KB</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="gruppo">
+    <header>
+      <h2>Fascia dei contatti</h2>
+      <p>Il riquadro accanto al numero di telefono, in fondo alla pagina.</p>
+      <p class="dest">Nel sito diventa <code>img/cta.jpg</code> — 10 candidate</p>
+    </header>
+    <div class="griglia">
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mani-01.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mani-01.jpg" alt="mani-01.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mani-01.jpg</b> <span>419 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mani-02.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mani-02.jpg" alt="mani-02.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mani-02.jpg</b> <span>179 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mani-03.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mani-03.jpg" alt="mani-03.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mani-03.jpg</b> <span>173 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mani-04.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mani-04.jpg" alt="mani-04.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mani-04.jpg</b> <span>297 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mani-05.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mani-05.jpg" alt="mani-05.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mani-05.jpg</b> <span>155 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mani-06.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mani-06.jpg" alt="mani-06.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mani-06.jpg</b> <span>191 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mani-07.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mani-07.jpg" alt="mani-07.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mani-07.jpg</b> <span>147 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mani-08.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mani-08.jpg" alt="mani-08.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mani-08.jpg</b> <span>204 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mani-09.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mani-09.jpg" alt="mani-09.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mani-09.jpg</b> <span>287 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mani-10.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mani-10.jpg" alt="mani-10.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mani-10.jpg</b> <span>177 KB</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="gruppo">
+    <header>
+      <h2>Caldaie e condizionatori</h2>
+      <p>Le prime cinque (cald-01…05) sono caldaie, le altre cinque (cald-06…10) condizionatori. Ricerca dedicata, fatta dopo le altre.</p>
+      <p class="dest">Nel sito diventa <code>img/serv-idraulica.jpg oppure img/serv-clima.jpg</code> — 10 candidate</p>
+    </header>
+    <div class="griglia">
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/cald-01.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/cald-01.jpg" alt="cald-01.jpg" loading="lazy">
+        </a>
+        <figcaption><b>cald-01.jpg</b> <span>406 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/cald-02.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/cald-02.jpg" alt="cald-02.jpg" loading="lazy">
+        </a>
+        <figcaption><b>cald-02.jpg</b> <span>144 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/cald-03.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/cald-03.jpg" alt="cald-03.jpg" loading="lazy">
+        </a>
+        <figcaption><b>cald-03.jpg</b> <span>167 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/cald-04.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/cald-04.jpg" alt="cald-04.jpg" loading="lazy">
+        </a>
+        <figcaption><b>cald-04.jpg</b> <span>194 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/cald-05.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/cald-05.jpg" alt="cald-05.jpg" loading="lazy">
+        </a>
+        <figcaption><b>cald-05.jpg</b> <span>236 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/cald-06.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/cald-06.jpg" alt="cald-06.jpg" loading="lazy">
+        </a>
+        <figcaption><b>cald-06.jpg</b> <span>71 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/cald-07.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/cald-07.jpg" alt="cald-07.jpg" loading="lazy">
+        </a>
+        <figcaption><b>cald-07.jpg</b> <span>61 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/cald-08.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/cald-08.jpg" alt="cald-08.jpg" loading="lazy">
+        </a>
+        <figcaption><b>cald-08.jpg</b> <span>316 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/cald-09.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/cald-09.jpg" alt="cald-09.jpg" loading="lazy">
+        </a>
+        <figcaption><b>cald-09.jpg</b> <span>219 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/cald-10.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/cald-10.jpg" alt="cald-10.jpg" loading="lazy">
+        </a>
+        <figcaption><b>cald-10.jpg</b> <span>221 KB</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="gruppo">
+    <header>
+      <h2>Idraulica (primo giro)</h2>
+      <p>Miniatura della riga &quot;Idraulica e caldaie&quot;.</p>
+      <p class="dest">Nel sito diventa <code>img/serv-idraulica.jpg</code> — 12 candidate</p>
+    </header>
+    <div class="griglia">
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/idr-01.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/idr-01.jpg" alt="idr-01.jpg" loading="lazy">
+        </a>
+        <figcaption><b>idr-01.jpg</b> <span>144 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/idr-02.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/idr-02.jpg" alt="idr-02.jpg" loading="lazy">
+        </a>
+        <figcaption><b>idr-02.jpg</b> <span>250 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/idr-03.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/idr-03.jpg" alt="idr-03.jpg" loading="lazy">
+        </a>
+        <figcaption><b>idr-03.jpg</b> <span>232 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/idr-04.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/idr-04.jpg" alt="idr-04.jpg" loading="lazy">
+        </a>
+        <figcaption><b>idr-04.jpg</b> <span>149 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/idr-05.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/idr-05.jpg" alt="idr-05.jpg" loading="lazy">
+        </a>
+        <figcaption><b>idr-05.jpg</b> <span>117 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/idr-06.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/idr-06.jpg" alt="idr-06.jpg" loading="lazy">
+        </a>
+        <figcaption><b>idr-06.jpg</b> <span>156 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/idr-07.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/idr-07.jpg" alt="idr-07.jpg" loading="lazy">
+        </a>
+        <figcaption><b>idr-07.jpg</b> <span>222 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/idr-08.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/idr-08.jpg" alt="idr-08.jpg" loading="lazy">
+        </a>
+        <figcaption><b>idr-08.jpg</b> <span>92 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/idr-09.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/idr-09.jpg" alt="idr-09.jpg" loading="lazy">
+        </a>
+        <figcaption><b>idr-09.jpg</b> <span>136 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/idr-10.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/idr-10.jpg" alt="idr-10.jpg" loading="lazy">
+        </a>
+        <figcaption><b>idr-10.jpg</b> <span>309 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/idr-11.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/idr-11.jpg" alt="idr-11.jpg" loading="lazy">
+        </a>
+        <figcaption><b>idr-11.jpg</b> <span>88 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/idr-12.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/idr-12.jpg" alt="idr-12.jpg" loading="lazy">
+        </a>
+        <figcaption><b>idr-12.jpg</b> <span>129 KB</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="gruppo">
+    <header>
+      <h2>Bagni e ristrutturazioni</h2>
+      <p>Miniatura della riga &quot;Bagni e ristrutturazioni&quot;.</p>
+      <p class="dest">Nel sito diventa <code>img/serv-bagno.jpg</code> — 12 candidate</p>
+    </header>
+    <div class="griglia">
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/bagno-01.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/bagno-01.jpg" alt="bagno-01.jpg" loading="lazy">
+        </a>
+        <figcaption><b>bagno-01.jpg</b> <span>148 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/bagno-02.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/bagno-02.jpg" alt="bagno-02.jpg" loading="lazy">
+        </a>
+        <figcaption><b>bagno-02.jpg</b> <span>158 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/bagno-03.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/bagno-03.jpg" alt="bagno-03.jpg" loading="lazy">
+        </a>
+        <figcaption><b>bagno-03.jpg</b> <span>213 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/bagno-04.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/bagno-04.jpg" alt="bagno-04.jpg" loading="lazy">
+        </a>
+        <figcaption><b>bagno-04.jpg</b> <span>147 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/bagno-05.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/bagno-05.jpg" alt="bagno-05.jpg" loading="lazy">
+        </a>
+        <figcaption><b>bagno-05.jpg</b> <span>226 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/bagno-06.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/bagno-06.jpg" alt="bagno-06.jpg" loading="lazy">
+        </a>
+        <figcaption><b>bagno-06.jpg</b> <span>307 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/bagno-07.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/bagno-07.jpg" alt="bagno-07.jpg" loading="lazy">
+        </a>
+        <figcaption><b>bagno-07.jpg</b> <span>259 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/bagno-08.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/bagno-08.jpg" alt="bagno-08.jpg" loading="lazy">
+        </a>
+        <figcaption><b>bagno-08.jpg</b> <span>124 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/bagno-09.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/bagno-09.jpg" alt="bagno-09.jpg" loading="lazy">
+        </a>
+        <figcaption><b>bagno-09.jpg</b> <span>115 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/bagno-10.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/bagno-10.jpg" alt="bagno-10.jpg" loading="lazy">
+        </a>
+        <figcaption><b>bagno-10.jpg</b> <span>176 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/bagno-11.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/bagno-11.jpg" alt="bagno-11.jpg" loading="lazy">
+        </a>
+        <figcaption><b>bagno-11.jpg</b> <span>130 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/bagno-12.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/bagno-12.jpg" alt="bagno-12.jpg" loading="lazy">
+        </a>
+        <figcaption><b>bagno-12.jpg</b> <span>146 KB</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="gruppo">
+    <header>
+      <h2>Muratura e cartongesso</h2>
+      <p>Miniatura della riga &quot;Muratura e cartongesso&quot;.</p>
+      <p class="dest">Nel sito diventa <code>img/serv-muratura.jpg</code> — 12 candidate</p>
+    </header>
+    <div class="griglia">
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mur-01.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mur-01.jpg" alt="mur-01.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mur-01.jpg</b> <span>338 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mur-02.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mur-02.jpg" alt="mur-02.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mur-02.jpg</b> <span>135 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mur-03.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mur-03.jpg" alt="mur-03.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mur-03.jpg</b> <span>182 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mur-04.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mur-04.jpg" alt="mur-04.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mur-04.jpg</b> <span>146 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mur-05.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mur-05.jpg" alt="mur-05.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mur-05.jpg</b> <span>232 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mur-06.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mur-06.jpg" alt="mur-06.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mur-06.jpg</b> <span>125 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mur-07.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mur-07.jpg" alt="mur-07.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mur-07.jpg</b> <span>110 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mur-08.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mur-08.jpg" alt="mur-08.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mur-08.jpg</b> <span>119 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mur-09.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mur-09.jpg" alt="mur-09.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mur-09.jpg</b> <span>58 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mur-10.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mur-10.jpg" alt="mur-10.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mur-10.jpg</b> <span>124 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mur-11.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mur-11.jpg" alt="mur-11.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mur-11.jpg</b> <span>122 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/mur-12.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/mur-12.jpg" alt="mur-12.jpg" loading="lazy">
+        </a>
+        <figcaption><b>mur-12.jpg</b> <span>70 KB</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="gruppo">
+    <header>
+      <h2>Piastrelle e pavimenti</h2>
+      <p>Miniatura della riga &quot;Piastrelle e pavimenti&quot;.</p>
+      <p class="dest">Nel sito diventa <code>img/serv-piastrelle.jpg</code> — 12 candidate</p>
+    </header>
+    <div class="griglia">
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/pia-01.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/pia-01.jpg" alt="pia-01.jpg" loading="lazy">
+        </a>
+        <figcaption><b>pia-01.jpg</b> <span>348 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/pia-02.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/pia-02.jpg" alt="pia-02.jpg" loading="lazy">
+        </a>
+        <figcaption><b>pia-02.jpg</b> <span>259 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/pia-03.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/pia-03.jpg" alt="pia-03.jpg" loading="lazy">
+        </a>
+        <figcaption><b>pia-03.jpg</b> <span>215 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/pia-04.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/pia-04.jpg" alt="pia-04.jpg" loading="lazy">
+        </a>
+        <figcaption><b>pia-04.jpg</b> <span>231 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/pia-05.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/pia-05.jpg" alt="pia-05.jpg" loading="lazy">
+        </a>
+        <figcaption><b>pia-05.jpg</b> <span>147 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/pia-06.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/pia-06.jpg" alt="pia-06.jpg" loading="lazy">
+        </a>
+        <figcaption><b>pia-06.jpg</b> <span>137 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/pia-07.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/pia-07.jpg" alt="pia-07.jpg" loading="lazy">
+        </a>
+        <figcaption><b>pia-07.jpg</b> <span>171 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/pia-08.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/pia-08.jpg" alt="pia-08.jpg" loading="lazy">
+        </a>
+        <figcaption><b>pia-08.jpg</b> <span>231 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/pia-09.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/pia-09.jpg" alt="pia-09.jpg" loading="lazy">
+        </a>
+        <figcaption><b>pia-09.jpg</b> <span>70 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/pia-10.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/pia-10.jpg" alt="pia-10.jpg" loading="lazy">
+        </a>
+        <figcaption><b>pia-10.jpg</b> <span>126 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/pia-11.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/pia-11.jpg" alt="pia-11.jpg" loading="lazy">
+        </a>
+        <figcaption><b>pia-11.jpg</b> <span>110 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/pia-12.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/pia-12.jpg" alt="pia-12.jpg" loading="lazy">
+        </a>
+        <figcaption><b>pia-12.jpg</b> <span>77 KB</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="gruppo">
+    <header>
+      <h2>Riparazioni e piccoli lavori</h2>
+      <p>Miniatura della riga &quot;Riparazioni e piccoli lavori&quot;.</p>
+      <p class="dest">Nel sito diventa <code>img/serv-riparazioni.jpg</code> — 12 candidate</p>
+    </header>
+    <div class="griglia">
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/rip-01.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/rip-01.jpg" alt="rip-01.jpg" loading="lazy">
+        </a>
+        <figcaption><b>rip-01.jpg</b> <span>103 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/rip-02.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/rip-02.jpg" alt="rip-02.jpg" loading="lazy">
+        </a>
+        <figcaption><b>rip-02.jpg</b> <span>149 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/rip-03.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/rip-03.jpg" alt="rip-03.jpg" loading="lazy">
+        </a>
+        <figcaption><b>rip-03.jpg</b> <span>63 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/rip-04.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/rip-04.jpg" alt="rip-04.jpg" loading="lazy">
+        </a>
+        <figcaption><b>rip-04.jpg</b> <span>120 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/rip-05.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/rip-05.jpg" alt="rip-05.jpg" loading="lazy">
+        </a>
+        <figcaption><b>rip-05.jpg</b> <span>240 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/rip-06.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/rip-06.jpg" alt="rip-06.jpg" loading="lazy">
+        </a>
+        <figcaption><b>rip-06.jpg</b> <span>174 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/rip-07.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/rip-07.jpg" alt="rip-07.jpg" loading="lazy">
+        </a>
+        <figcaption><b>rip-07.jpg</b> <span>163 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/rip-08.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/rip-08.jpg" alt="rip-08.jpg" loading="lazy">
+        </a>
+        <figcaption><b>rip-08.jpg</b> <span>112 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/rip-09.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/rip-09.jpg" alt="rip-09.jpg" loading="lazy">
+        </a>
+        <figcaption><b>rip-09.jpg</b> <span>93 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/rip-10.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/rip-10.jpg" alt="rip-10.jpg" loading="lazy">
+        </a>
+        <figcaption><b>rip-10.jpg</b> <span>57 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/rip-11.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/rip-11.jpg" alt="rip-11.jpg" loading="lazy">
+        </a>
+        <figcaption><b>rip-11.jpg</b> <span>224 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/rip-12.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/rip-12.jpg" alt="rip-12.jpg" loading="lazy">
+        </a>
+        <figcaption><b>rip-12.jpg</b> <span>186 KB</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="gruppo">
+    <header>
+      <h2>Tinteggiatura e finiture</h2>
+      <p>Miniatura della riga &quot;Tinteggiatura e finiture&quot;.</p>
+      <p class="dest">Nel sito diventa <code>img/serv-tinteggiatura.jpg</code> — 12 candidate</p>
+    </header>
+    <div class="griglia">
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/tin-01.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/tin-01.jpg" alt="tin-01.jpg" loading="lazy">
+        </a>
+        <figcaption><b>tin-01.jpg</b> <span>235 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/tin-02.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/tin-02.jpg" alt="tin-02.jpg" loading="lazy">
+        </a>
+        <figcaption><b>tin-02.jpg</b> <span>97 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/tin-03.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/tin-03.jpg" alt="tin-03.jpg" loading="lazy">
+        </a>
+        <figcaption><b>tin-03.jpg</b> <span>91 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/tin-04.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/tin-04.jpg" alt="tin-04.jpg" loading="lazy">
+        </a>
+        <figcaption><b>tin-04.jpg</b> <span>47 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/tin-05.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/tin-05.jpg" alt="tin-05.jpg" loading="lazy">
+        </a>
+        <figcaption><b>tin-05.jpg</b> <span>232 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/tin-06.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/tin-06.jpg" alt="tin-06.jpg" loading="lazy">
+        </a>
+        <figcaption><b>tin-06.jpg</b> <span>117 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/tin-07.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/tin-07.jpg" alt="tin-07.jpg" loading="lazy">
+        </a>
+        <figcaption><b>tin-07.jpg</b> <span>167 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/tin-08.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/tin-08.jpg" alt="tin-08.jpg" loading="lazy">
+        </a>
+        <figcaption><b>tin-08.jpg</b> <span>100 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/tin-09.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/tin-09.jpg" alt="tin-09.jpg" loading="lazy">
+        </a>
+        <figcaption><b>tin-09.jpg</b> <span>42 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/tin-10.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/tin-10.jpg" alt="tin-10.jpg" loading="lazy">
+        </a>
+        <figcaption><b>tin-10.jpg</b> <span>212 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/tin-11.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/tin-11.jpg" alt="tin-11.jpg" loading="lazy">
+        </a>
+        <figcaption><b>tin-11.jpg</b> <span>151 KB</span></figcaption>
+      </figure>
+      <figure class="scheda orizzontale">
+        <a href="img/scelta/tin-12.jpg" target="_blank" rel="noopener">
+          <img src="img/scelta/tin-12.jpg" alt="tin-12.jpg" loading="lazy">
+        </a>
+        <figcaption><b>tin-12.jpg</b> <span>118 KB</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+</body>
+</html>
