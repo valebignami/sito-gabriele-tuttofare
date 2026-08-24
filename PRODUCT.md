@@ -64,8 +64,11 @@ Dati reali, confermati dal committente e pubblicati:
 - nome e cognome → **Gabriel Calasi**
 - cellulare → **+39 320 417 7267**, usato per WhatsApp, `tel:` e in chiaro
 
-Unico dato ancora ignoto, da tenere come segnaposto evidente e mai inventare:
-- partita IVA, se esiste → `[P.IVA]`
+Partita IVA: il committente ha indicato che Gabriel non ne ha una, quindi la voce è
+stata rimossa dal footer invece di restare a segnaposto. Se un domani la aprisse, va
+rimessa: chi ha P.IVA è tenuto a indicarla sui propri materiali.
+
+Nel sito non resta nessun segnaposto.
 
 Questione aperta, sollevata al committente e non ancora risolta: in Italia gli
 interventi sul circuito refrigerante dei condizionatori richiedono la certificazione

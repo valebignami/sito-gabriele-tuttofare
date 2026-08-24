@@ -19,11 +19,11 @@ Il numero è in **sedici punti**: dieci link WhatsApp (uno generico più uno per
 servizio, ognuno con il messaggio già scritto), sei link "Chiama", e tre volte in
 chiaro — in alto, nella fascia arancio e nel footer.
 
-**Manca solo la partita IVA.** Cerca `[P.IVA]` in `index.html` e sostituiscila. Se
-Gabriel non ce l'ha, cancella tutta la scritta
-`P.IVA <span class="ph">[P.IVA]</span> · ` dal fondo pagina.
+**Non manca più niente.** Nel sito non ci sono segnaposto: nessuna scritta gialla.
 
-> È l'unica scritta gialla rimasta. Quando sparisce, i dati sono a posto.
+La partita IVA è stata tolta dal fondo pagina perché Gabriel non ce l'ha. Se un
+domani la aprisse, va rimessa lì: per legge un'attività con P.IVA deve indicarla sui
+propri materiali, e in ogni caso rassicura chi legge.
 
 Se un domani il numero cambia, va sostituito in tre forme diverse, nell'ordine:
 `393204177267` (link WhatsApp), poi `+393204177267` (link Chiama), poi
