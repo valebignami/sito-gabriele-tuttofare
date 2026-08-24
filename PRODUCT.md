@@ -16,7 +16,7 @@ statico gratuito senza usare un terminale.
 ## Users
 
 Chi ha un problema in casa a Milano e provincia — una perdita, una caldaia ferma, un
-bagno da rifare, un muro da sistemare — e ha ricevuto il nome di Gabriele dal
+bagno da rifare, un muro da sistemare — e ha ricevuto il nome di Gabriel dal
 passaparola, da un biglietto da visita o dal profilo Google. Arriva quasi sempre da
 smartphone, spesso con un problema urgente in corso, e sta decidendo in pochi secondi
 se questa persona è affidabile abbastanza da contattarla.
@@ -35,7 +35,7 @@ credibile quel profilo e il passaparola.
 
 ## Positioning
 
-Un solo professionista per tutta la casa. Gabriele copre da solo idraulica, caldaie e
+Un solo professionista per tutta la casa. Gabriel copre da solo idraulica, caldaie e
 condizionatori, muratura, piastrelle, cartongesso, riparazioni e finiture: il cliente
 non deve coordinare tre mestieri diversi.
 
@@ -47,7 +47,7 @@ capocantiere che ha aggiunto un secondo mestiere.
 ## Operating Context
 
 - Il primo contatto avviene su WhatsApp, tipicamente con la foto del problema. Il
-  cliente fotografa la perdita, Gabriele capisce subito se è lavoro suo. Questo batte
+  cliente fotografa la perdita, Gabriel capisce subito se è lavoro suo. Questo batte
   qualsiasi form di contatto ed è il motivo per cui il sito non ne ha uno.
 - Zona operativa: Milano e provincia.
 - Sopralluogo e preventivo gratuiti (confermato).
@@ -60,15 +60,17 @@ Servizi confermati: idraulica, caldaie e condizionatori; bagni e ristrutturazion
 muratura e cartongesso; piastrelle e pavimenti; riparazioni e piccoli lavori;
 tinteggiatura e finiture.
 
-Fatti ancora ignoti, da tenere come segnaposto evidenti e mai inventare:
-- cognome → `[COGNOME]`
+Dati reali, confermati dal committente e pubblicati:
+- nome e cognome → **Gabriel Calasi**
+- cellulare → **+39 320 417 7267**, usato per WhatsApp, `tel:` e in chiaro
+
+Unico dato ancora ignoto, da tenere come segnaposto evidente e mai inventare:
 - partita IVA, se esiste → `[P.IVA]`
-- numero di telefono → `+39 XXX XXX XXXX`, usato per WhatsApp, `tel:` e in chiaro
 
 Questione aperta, sollevata al committente e non ancora risolta: in Italia gli
 interventi sul circuito refrigerante dei condizionatori richiedono la certificazione
 F-GAS (patentino). Il sito dichiara i condizionatori tra i servizi su richiesta
-esplicita del committente; va verificato che Gabriele sia certificato, altrimenti la
+esplicita del committente; va verificato che Gabriel sia certificato, altrimenti la
 voce va limitata alla parte non soggetta a certificazione.
 
 Vincoli tecnici: nessuna dipendenza esterna a runtime — i caratteri sono salvati nel
@@ -77,7 +79,8 @@ così non serve il banner cookie; nessun backend, quindi nessun form.
 
 ## Brand Commitments
 
-Nome usato: Gabriele. Nessun logo, nessun marchio esistente.
+Nome usato: **Gabriel** (non "Gabriele" — confermato dal committente). Cognome
+Calasi. Nessun logo, nessun marchio esistente.
 
 Vincolo visivo posto dall'utente e vincolante: fondo scuro antracite con accento
 arancio cantiere — "artigiano moderno", che si distingua dai siti da idraulico
@@ -105,7 +108,7 @@ Vanno citate testualmente e mai modificate: una testimonianza riscritta non è p
 testimonianza. Se se ne aggiungono altre, valgono le stesse condizioni.
 
 Non esistono invece, ad oggi:
-- foto dei lavori realmente svolti da Gabriele
+- foto dei lavori realmente svolti da Gabriel
 - numeri verificabili (cantieri conclusi, clienti serviti, tempi di intervento)
 - un profilo Google con recensioni pubbliche a cui rimandare
 

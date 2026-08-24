@@ -1,60 +1,48 @@
-# Sito di Gabriele — istruzioni
+# Sito di Gabriel — istruzioni
 
 Sito di una pagina sola. Nessun programma da installare, nessun account, nessun
 abbonamento. Per vederlo basta fare doppio clic su `index.html`.
 
 ---
 
-## 1. Le tre cose da sostituire prima di pubblicare
+## 1. Dati inseriti e cosa manca ancora
 
-Nel sito ci sono tre segnaposto. Finché ci sono, i pulsanti WhatsApp e Chiama **non
-funzionano**: portano a un numero inesistente.
+**Già nel sito:**
 
-Apri `index.html` con un editor di testo (Blocco note va benissimo) e usa
-**Modifica → Sostituisci** (`Ctrl+H`).
+| Dato | Valore |
+|---|---|
+| Nome | Gabriel Calasi |
+| Cellulare | +39 320 417 7267 |
+| Zona | Milano e provincia |
 
-### Il numero di telefono
+Il numero è in **sedici punti**: dieci link WhatsApp (uno generico più uno per ogni
+servizio, ognuno con il messaggio già scritto), sei link "Chiama", e tre volte in
+chiaro — in alto, nella fascia arancio e nel footer.
 
-Va sostituito in **tre forme diverse**. Falle tutte e tre, nell'ordine.
+**Manca solo la partita IVA.** Cerca `[P.IVA]` in `index.html` e sostituiscila. Se
+Gabriel non ce l'ha, cancella tutta la scritta
+`P.IVA <span class="ph">[P.IVA]</span> · ` dal fondo pagina.
 
-Immaginiamo che il numero sia `333 1234567`:
+> È l'unica scritta gialla rimasta. Quando sparisce, i dati sono a posto.
 
-| Cerca | Sostituisci con | Dove finisce |
-|---|---|---|
-| `39XXXXXXXXXX` | `393331234567` | i link di WhatsApp |
-| `+39XXXXXXXXXX` | `+393331234567` | i link "Chiama ora" |
-| `+39 XXX XXX XXXX` | `+39 333 1234567` | il numero scritto e leggibile |
+Se un domani il numero cambia, va sostituito in tre forme diverse, nell'ordine:
+`393204177267` (link WhatsApp), poi `+393204177267` (link Chiama), poi
+`+39 320 417 7267` (il numero leggibile). Nelle prime due va senza spazi e senza lo
+zero iniziale.
 
-Attenzione: nelle prime due righe il numero va **senza spazi e senza il primo zero**
-(i cellulari italiani non ne hanno). Nella terza riga gli spazi servono, perché quello
-è il numero che la gente legge.
-
-Il file `scegli-foto.html` non va toccato: è solo uno strumento di lavoro per
-scegliere le fotografie, non fa parte del sito pubblicato.
-
-### Il cognome
-
-Cerca `[COGNOME]` e sostituisci con il cognome vero. Compare in due punti (firma e
-fondo pagina).
-
-### La partita IVA
-
-Cerca `[P.IVA]` e sostituisci con il numero. Se Gabriele **non** ha partita IVA,
-cancella tutta la scritta `P.IVA <span class="ph">[P.IVA]</span> · ` dal fondo pagina.
-
-> I segnaposto sono evidenziati in giallo nel sito proprio per non dimenticarseli.
-> Quando spariscono i riquadri gialli, hai finito.
+I file `scegli-foto.html` e `scegli-fasce.html` non vanno toccati: sono strumenti di
+lavoro per scegliere le fotografie, non fanno parte del sito pubblicato.
 
 ---
 
-## 2. Come si controlla di aver fatto tutto
+## 2. Come si controlla che funzioni
 
-Apri `index.html` nel browser e verifica:
+Apri il sito e verifica:
 
-- non si vede più nessuna scritta gialla;
-- cliccando "Scrivimi su WhatsApp" si apre WhatsApp con il numero giusto e il
-  messaggio già scritto;
-- cliccando il numero grande in fondo parte la chiamata (dal telefono).
+- non si vede più nessuna scritta gialla (a parte la P.IVA, finché non la metti);
+- cliccando "Scrivimi su WhatsApp" si apre WhatsApp sul numero di Gabriel con il
+  messaggio già scritto — e toccando un servizio il messaggio nomina quel servizio;
+- dal telefono, cliccando il numero parte la chiamata.
 
 ---
 
@@ -97,9 +85,9 @@ Sono tutti dentro `index.html`, in italiano, tra i tag. Si riconoscono a occhio.
 Non serve toccare `style.css` né `script.js`.
 
 Le sezioni, nell'ordine: titolo iniziale → percorso (muratore / capo squadra /
-idraulico) → cosa faccio → sono Gabriele → come funziona → contatti.
+idraulico) → cosa faccio → sono Gabriel → come funziona → contatti.
 
-**Due frasi da verificare con Gabriele prima di pubblicare**, perché sono promesse:
+**Due frasi da verificare con Gabriel prima di pubblicare**, perché sono promesse:
 
 - *"Sopralluogo e preventivo gratuiti"* — compare tre volte. Se il sopralluogo lo fa
   pagare, va tolta ovunque.
@@ -116,7 +104,7 @@ Le foto stanno nella cartella `img/`:
 | File | Dove si vede |
 |---|---|
 | `hero.jpg` | la grande foto iniziale (orizzontale) |
-| `gabriele.jpg` | il ritratto nella sezione "Sono Gabriele" (verticale) |
+| `gabriele.jpg` | il ritratto nella sezione "Sono Gabriel" (verticale) |
 | `cta.jpg` | la foto accanto ai contatti, in fondo (orizzontale) |
 | `serv-idraulica.jpg` | riga "Idraulica e caldaie" |
 | `serv-clima.jpg` | riga "Condizionatori" |
@@ -149,7 +137,7 @@ Quelle montate adesso vengono da lì. Se una non ti convince, il ricambio è a p
 
 ### La cosa più importante di tutte
 
-Queste sono **foto di repertorio, non lavori di Gabriele**. Servono per partire.
+Queste sono **foto di repertorio, non lavori di Gabriel**. Servono per partire.
 Appena ha cinque o sei foto dei suoi cantieri — un bagno prima e dopo, una caldaia
 installata, un muro finito — vanno sostituite. Le foto vere convincono molto più
 delle foto comprate, e si vede subito la differenza.
@@ -180,7 +168,7 @@ sito. Su un biglietto da visita fa una differenza enorme rispetto a un indirizzo
 
 ## 7. La cosa che conta più del sito
 
-Il sito serve a chi ha già sentito il nome di Gabriele e vuole controllare che sia
+Il sito serve a chi ha già sentito il nome di Gabriel e vuole controllare che sia
 serio. **Da solo non porta clienti nuovi.**
 
 Chi cerca "idraulico Milano" su Google guarda la mappa e le stelline, non i siti. Per

@@ -1,11 +1,11 @@
-# Sito vetrina — Gabriele, tuttofare per la casa
+# Sito vetrina — Gabriel, tuttofare per la casa
 
 **Data:** 2026-08-23
 **Stato:** approvato, in implementazione
 
 ## Obiettivo
 
-Una pagina web che convinca chi ha già sentito il nome di Gabriele a scrivergli su
+Una pagina web che convinca chi ha già sentito il nome di Gabriel a scrivergli su
 WhatsApp. Non è un canale di acquisizione: è il posto dove atterra chi arriva dal
 passaparola, da un biglietto da visita o dal profilo Google, e dove decide se
 fidarsi.
@@ -14,7 +14,7 @@ L'unica azione che il sito deve produrre è un contatto. Tutto il resto è conto
 
 ## Chi è
 
-Gabriele `[COGNOME]`, Milano e provincia.
+Gabriel `[COGNOME]`, Milano e provincia.
 
 Vent'anni in imprese edili come muratore, poi capo squadra, quindi responsabile di
 cantiere. In seguito si è specializzato in idraulica: caldaie, impianti, bagni. Oggi
@@ -46,7 +46,7 @@ Le alternative scartate:
 - **Framework** (Astro, Next.js): nessun vantaggio a questa scala, e renderebbe
   impossibile a un non sviluppatore cambiare un numero di telefono.
 
-Il vincolo che guida tutto: Gabriele deve poter aggiornare il sito aprendo un file
+Il vincolo che guida tutto: Gabriel deve poter aggiornare il sito aprendo un file
 di testo, e chiunque deve poterlo pubblicare senza sapere cos'è un terminale.
 
 ## Struttura della pagina
@@ -58,11 +58,11 @@ Le sezioni sono nell'ordine in cui un cliente si convince.
    disponibilità per le urgenze, i due pulsanti WhatsApp e Chiama.
 2. **Barra di fiducia** — tre affermazioni secche: 20+ anni di cantiere, ex capo
    squadra muratori, specializzato in idraulica e caldaie. È ciò che distingue
-   Gabriele da un tuttofare qualunque.
+   Gabriel da un tuttofare qualunque.
 3. **Servizi** — sei schede con foto: idraulica e caldaie, bagni e ristrutturazioni,
    muratura e cartongesso, piastrelle e pavimenti, riparazioni e piccoli lavori,
    tinteggiatura e finiture.
-4. **Chi è Gabriele** — foto e testo sul percorso muratore → capo squadra →
+4. **Chi è Gabriel** — foto e testo sul percorso muratore → capo squadra →
    idraulico. È la sezione che vende la fiducia.
 5. **Come funziona** — tre passi: scrivi su WhatsApp con una foto del problema →
    sopralluogo e preventivo gratuiti → lavoro finito e pulito.
@@ -97,7 +97,7 @@ Un solo numero, usato in tre modi:
 - il numero in chiaro, leggibile, nella fascia di chiusura
 
 **Niente form di contatto.** Su un artigiano, WhatsApp con la foto del problema batte
-qualsiasi modulo: il cliente fotografa la perdita e Gabriele capisce subito se è
+qualsiasi modulo: il cliente fotografa la perdita e Gabriel capisce subito se è
 lavoro suo. Un form richiederebbe anche un servizio esterno per l'invio, quindi una
 dipendenza e un punto di rottura in più.
 
@@ -108,10 +108,10 @@ dipendenza e un punto di rottura in più.
 Otto foto stock scaricate da Pexels/Unsplash, con licenza libera anche per uso
 commerciale, salvate in `img/` perché il sito non dipenda da server di terzi.
 
-Sono foto stock, non lavori di Gabriele. Vanno sostituite appena ha cinque o sei foto
+Sono foto stock, non lavori di Gabriel. Vanno sostituite appena ha cinque o sei foto
 dei suoi cantieri: le foto vere convertono molto meglio.
 
-Non vengono inventate recensioni, clienti o numeri di lavori svolti. Se Gabriele ha
+Non vengono inventate recensioni, clienti o numeri di lavori svolti. Se Gabriel ha
 testimonianze reali, si aggiungono dopo.
 
 ## File

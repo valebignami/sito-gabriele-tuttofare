@@ -1,5 +1,5 @@
 ---
-name: Gabriele — Tuttofare per la casa
+name: Gabriel — Tuttofare per la casa
 description: Antracite di cantiere e arancio segnaletica; Anton per le affermazioni, Barlow per la voce.
 colors:
   antracite: "#16181A"
@@ -264,7 +264,7 @@ components:
     padding: ".75rem 1.25rem"
 ---
 
-# Design System: Gabriele — Tuttofare per la casa
+# Design System: Gabriel — Tuttofare per la casa
 
 > Documento in italiano; le intestazioni di sezione restano in inglese perché sono
 > quelle canoniche del formato DESIGN.md e gli strumenti che lo leggono le cercano
@@ -391,7 +391,7 @@ la voce diretta dell'artigiano. Le due famiglie non si contendono mai lo stesso 
 
 ### Hierarchy (Anton)
 - **Display / titolo hero** (`clamp(2.5rem, 8.4vw, 6rem)`, interlinea .9, tracking -.02em, maiuscolo, `text-wrap: balance`): una sola occorrenza per pagina, l'`h1` dell'hero, spezzato a mano con `<br>`. Le parole finali sono in `<em>` non corsivo, colorate di arancio. **Il minimo è 2.5rem, non un valore più alto:** serve perché la parola più lunga del titolo non sbordi a 360px di larghezza.
-- **Headline / titoli di sezione** (`clamp(2rem, 5.5vw, 3.75rem)`, interlinea .96): gli `h2` di «Cosa faccio», «Come funziona», «Sono Gabriele».
+- **Headline / titoli di sezione** (`clamp(2rem, 5.5vw, 3.75rem)`, interlinea .96): gli `h2` di «Cosa faccio», «Come funziona», «Sono Gabriel».
 - **CTA title** (`clamp(2rem, 5vw, 3.5rem)`, interlinea .96, tracking -.012em, misura 16ch): il titolo della fascia contatti, leggermente più contenuto della headline.
 - **Numero grande** (`clamp(2rem, 5.2vw, 3.5rem)`, interlinea 1, tracking -.01em): il telefono nella fascia contatti, trattato come un titolo cliccabile con sottolineatura da 3px.
 - **Title / titolo del percorso** (`clamp(1.625rem, 4vw, 2.75rem)`, misura 22ch): l'affermazione «Non un tuttofare improvvisato», con la seconda frase in arancio dentro uno `<span>`.
