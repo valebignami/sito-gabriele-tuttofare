@@ -172,16 +172,19 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .topbar.is-stuck .topbar-call { padding-block: .35rem; }
 .topbar.is-stuck .wordmark { font-size: 1.3rem; }
+.topbar.is-stuck .marchio { width: 25px; height: 25px; }
 .topbar.is-stuck::before { opacity: 0; }
+/* Marchio e nome sono un blocco solo: la stessa immagine della scheda del
+   browser, così tab e intestazione coincidono. */
 .wordmark {
+  display: inline-flex; align-items: center; gap: .55rem;
   font-family: var(--display);
   font-size: 1.5rem; text-transform: uppercase; letter-spacing: .01em;
   margin-right: auto;
 }
-.wordmark::after {
-  content: ''; display: inline-block;
-  width: 7px; height: 7px; margin-left: .4rem; vertical-align: .12em;
-  background: var(--orange);
+.marchio {
+  width: 30px; height: 30px; flex: none;
+  transition: width .3s var(--ease), height .3s var(--ease);
 }
 .topnav { display: flex; gap: 1.75rem; }
 .topnav a {
@@ -672,19 +675,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   width: 100%; height: 100%; object-fit: cover;
 }
 
-/* ---------- footer ---------- */
-
-.foot {
-  padding: clamp(2.5rem, 5vw, 4rem) var(--pad);
-  max-width: var(--wrap); margin-inline: auto;
-}
-.foot-name {
-  font-family: var(--display); text-transform: uppercase;
-  font-size: 1.375rem; letter-spacing: .01em;
-}
-.foot-meta { margin-top: .6rem; color: var(--fg-2); font-size: 1rem; }
-.foot-meta a { border-bottom: 1px solid var(--line-2); }
-.foot-meta a:hover { color: var(--fg); border-bottom-color: var(--orange); }
+/* Nessun footer: ripeteva nome, zona e numero già presenti nella fascia arancio
+   subito sopra, e chiudeva la pagina su un rettangolo nero vuoto invece che
+   sull'invito a scrivere. La pagina finisce sull'arancio. */
 
 /* ---------- barra fissa mobile ---------- */
 
@@ -742,8 +735,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 @media (max-width: 760px) {
-  /* la barra fissa cresce con la safe area dell'iPhone: il footer deve scansarsi */
-  body { padding-bottom: calc(62px + env(safe-area-inset-bottom)); }
+  /* Lo spazio per la barra fissa lo mette l'ultima sezione, non il body: così
+     sotto resta arancio e non ricompare una striscia nera in fondo. */
+  body { padding-bottom: 0; }
+  .cta { padding-bottom: calc(62px + env(safe-area-inset-bottom)); }
   .bar { display: grid; }
   .topbar-call span { display: none; }
   .topbar-call {
