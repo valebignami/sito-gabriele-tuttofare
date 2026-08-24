@@ -1,0 +1,48 @@
+# Pubblica il sito su GitHub Pages a ogni push su main.
+#
+# Sostituisce la build automatica "legacy" di Pages, che si era bloccata in
+# stato "building" senza mai completare né dare errore. Questa lascia un log
+# consultabile nella scheda Actions del repository.
+#
+# Il sito e' statico: non c'e' niente da compilare, si carica la cartella cosi'
+# com'e'.
+
+name: Pubblica su GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Una pubblicazione alla volta; se ne arriva una nuova mentre la precedente
+# e' in corso, si aspetta invece di annullarla.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Scarica il repository
+        uses: actions/checkout@v4
+
+      - name: Prepara Pages
+        uses: actions/configure-pages@v5
+
+      - name: Impacchetta la cartella del sito
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Pubblica
+        id: deploy
+        uses: actions/deploy-pages@v4
