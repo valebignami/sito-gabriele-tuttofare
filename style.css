@@ -205,6 +205,32 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* su desktop c'e' spazio per il numero per esteso, l'etichetta non serve */
 .tb-etichetta { display: none; }
 
+/* ---------- menu a scomparsa (solo mobile) ---------- */
+
+/* Sopra i 900px le voci stanno nella barra e questo non serve. */
+.menu-btn { display: none; }
+.menu-mobile { display: none; }
+
+/* Il pannello sta SOTTO la barra e si aggancia alla sua altezza, che cambia
+   quando la barra si stringe scorrendo: per questo il selettore fratello. */
+.menu-mobile {
+  position: fixed; inset: 76px 0 auto 0; z-index: 45;
+  background: rgba(22, 24, 26, .97);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+  transition: top .3s var(--ease);
+}
+.topbar.is-stuck ~ .menu-mobile { top: 53px; }
+
+.menu-mobile a {
+  display: block;
+  padding: 1rem var(--pad);
+  font-size: 1.125rem; font-weight: 500;
+  border-bottom: 1px solid var(--line);
+}
+.menu-mobile a:last-child { border-bottom: none; }
+.menu-mobile a:active { background: rgba(242, 101, 34, .14); }
+
 /* ---------- hero ---------- */
 
 /* Tutto l'hero è dimensionato anche sull'ALTEZZA della finestra, non solo sulla
@@ -747,6 +773,32 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .tb-numero { display: none; }
   .tb-etichetta { display: inline; }
   .topbar-call { padding: 0 .85rem; min-height: 48px; }
+
+  /* con tre elementi in barra i 2rem di respiro del desktop sono troppi */
+  .topbar { gap: .5rem; }
+
+  /* menu a scomparsa: nella barra non c'e' spazio per quattro voci */
+  .menu-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 48px; height: 48px; flex: none;
+    margin-left: .4rem; padding: 0;
+    background: none; border: 1px solid var(--edge); border-radius: 3px;
+    color: var(--fg); cursor: pointer;
+  }
+  .menu-btn svg {
+    width: 22px; height: 22px;
+    fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round;
+  }
+  .menu-btn svg path { transition: transform .25s var(--ease), opacity .2s var(--ease); transform-origin: center; }
+  .menu-btn[aria-expanded="true"] { border-color: var(--orange); }
+  .menu-btn[aria-expanded="true"] .l1 { transform: translateY(5px) rotate(45deg); }
+  .menu-btn[aria-expanded="true"] .l2 { opacity: 0; }
+  .menu-btn[aria-expanded="true"] .l3 { transform: translateY(-5px) rotate(-45deg); }
+
+  .menu-mobile { display: block; visibility: hidden; opacity: 0; transform: translateY(-8px);
+                 transition: opacity .22s var(--ease), transform .22s var(--ease),
+                             visibility .22s, top .3s var(--ease); }
+  .menu-mobile.is-open { visibility: visible; opacity: 1; transform: none; }
   /* La barra fissa in basso è alta 62px: l'hero deve finire sopra di lei, non
      dietro. Su uno schermo da 640px anche la riga del preventivo ci sta. */
   .hero {

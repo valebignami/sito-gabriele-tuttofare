@@ -19,6 +19,38 @@
     window.addEventListener('scroll', aggiornaTopbar, { passive: true });
   }
 
+  /* --- menu a scomparsa su mobile --- */
+  var bottone = document.getElementById('menu-btn');
+  var menu = document.getElementById('menu-mobile');
+
+  function chiudiMenu() {
+    if (!bottone || !menu) return;
+    menu.classList.remove('is-open');
+    bottone.setAttribute('aria-expanded', 'false');
+    bottone.setAttribute('aria-label', 'Apri il menu');
+  }
+
+  if (bottone && menu) {
+    bottone.addEventListener('click', function () {
+      var aperto = menu.classList.toggle('is-open');
+      bottone.setAttribute('aria-expanded', aperto ? 'true' : 'false');
+      bottone.setAttribute('aria-label', aperto ? 'Chiudi il menu' : 'Apri il menu');
+    });
+
+    /* toccata una voce, il menu si toglie di mezzo */
+    var voci = menu.querySelectorAll('a');
+    for (var v = 0; v < voci.length; v++) voci[v].addEventListener('click', chiudiMenu);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') chiudiMenu();
+    });
+
+    /* se si scorre la pagina con il menu aperto, si chiude da solo */
+    window.addEventListener('scroll', function () {
+      if (menu.classList.contains('is-open')) chiudiMenu();
+    }, { passive: true });
+  }
+
   /* --- ingresso dell'hero: un solo momento, orchestrato --- */
   var saliti = document.querySelectorAll('[data-rise]');
 
