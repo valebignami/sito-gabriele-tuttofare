@@ -202,6 +202,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .topbar-call:hover { border-color: var(--orange); background: rgba(242, 101, 34, .12); }
 .topbar-call .ico { width: 17px; height: 17px; fill: none; stroke: var(--orange); stroke-width: 1.8; stroke-linejoin: round; }
+/* su desktop c'e' spazio per il numero per esteso, l'etichetta non serve */
+.tb-etichetta { display: none; }
 
 /* ---------- hero ---------- */
 
@@ -740,11 +742,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   body { padding-bottom: 0; }
   .cta { padding-bottom: calc(62px + env(safe-area-inset-bottom)); }
   .bar { display: grid; }
-  .topbar-call span { display: none; }
-  .topbar-call {
-    padding: 0; width: 48px; height: 48px;
-    display: inline-flex; align-items: center; justify-content: center;
-  }
+  /* Su mobile il numero per esteso non ci sta e non serve: al suo posto la
+     parola che dice cosa succede toccando. */
+  .tb-numero { display: none; }
+  .tb-etichetta { display: inline; }
+  .topbar-call { padding: 0 .85rem; min-height: 48px; }
   /* La barra fissa in basso è alta 62px: l'hero deve finire sopra di lei, non
      dietro. Su uno schermo da 640px anche la riga del preventivo ci sta. */
   .hero {
