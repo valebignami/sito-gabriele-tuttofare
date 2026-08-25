@@ -1,0 +1,13 @@
+# Materiale di lavoro: non fa parte del sito pubblicato.
+# Senza questa esclusione ogni deploy caricherebbe ~28 MB di foto di scorta.
+
+img/scelta/
+scegli-foto.html
+scegli-fasce.html
+tools/
+docs/
+.impeccable/
+PRODUCT.md
+DESIGN.md
+LEGGIMI.md
+.github/
